@@ -1,0 +1,44 @@
+#field-container table
+{
+	width: auto;
+}
+	
+#field-container td {
+	min-height:25px;
+	height:25px;
+	min-width:25px;
+	width:25px;
+	background-color:beige;
+	border:1px solid #bdbcbc;
+	color:beige;
+}
+
+#field-container td.active {
+	outline: blue;
+	outline-offset: 2px;
+	outline-style: dashed;
+	outline-width: 1px;
+}
+
+#field-container td.start {
+	background-color: green;
+	color:green;
+}
+
+#field-container td.finish {
+	background-color: red;
+	color:red;
+}
+
+#field-container td.wall {
+	background-color: #624949;
+	color:#624949;
+}
+#field-container td.path::after {
+	content: "*";
+	margin-left:-2px;
+	color: black;
+	cursor: default;
+	position: absolute;
+	margin-top:-8px;
+}
