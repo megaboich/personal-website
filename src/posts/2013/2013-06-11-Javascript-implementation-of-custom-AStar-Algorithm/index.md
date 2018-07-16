@@ -1,7 +1,9 @@
 ---
-layout: post.html
+layout: post.ejs
 title: Javascript implementation of custom A-Star algorithm
-tags: Javascript
+date: 2013-06-11
+collection: posts
+tags: JavaScript
 ---
 Recently I had a lot of interest for Javascript and decided to implement something funny and interesting.
 For me it was a problem of finding a way through the maze.

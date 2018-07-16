@@ -1,0 +1,19 @@
+<% include partials/header %>
+
+<body>
+<div class="container">
+  <% include partials/top-menu %>
+
+  <h1><%= title %></h1>
+  
+  <%- contents %>
+  <!-- Links to all posts: -->
+  <% collections.posts.forEach(post => { %>
+    <li>
+      <a href="/<%= post.path.replace('index.html', '') %>"><%= post.title %></a>
+    </li>
+  <% }) %>
+
+</body>
+</div>
+</html>

@@ -1,6 +1,8 @@
 ---
-layout: post.html
+layout: post.ejs
 title: Creating Simple RSS Reader Web application with C# and Asp.Net MVC.
+collection: posts
+date: 2011-08-12
 tags: 
 - C#
 - RSS

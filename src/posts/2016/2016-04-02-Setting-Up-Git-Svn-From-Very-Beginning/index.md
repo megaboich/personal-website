@@ -1,7 +1,9 @@
 ---
-layout: post.html
-tags: GIT SVN
+layout: post.ejs
 title: Setting up Git-Svn from very beginning
+date: 2016-04-02
+collection: posts
+tags: Git Svn
 ---
 This post is a very short instruction how to set up and configure running git-svn with legacy SVN repository.
 

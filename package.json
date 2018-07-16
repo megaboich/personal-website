@@ -4,16 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./index.js"
   },
   "author": "Oleksandr Boiko",
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.16.0",
+    "ejs": "^2.6.1",
     "figlet": "^1.2.0",
-    "handlebars": "^4.0.5",
     "metalsmith": "^2.1.0",
+    "metalsmith-collections": "^0.9.0",
     "metalsmith-layouts": "^1.4.1",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-permalinks": "^0.5.0",

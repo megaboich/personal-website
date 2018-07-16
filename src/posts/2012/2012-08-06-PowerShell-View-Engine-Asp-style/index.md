@@ -1,6 +1,8 @@
 ---
-layout: post.html
+layout: post.ejs
 title: PowerShell View Engine - Asp style
+date: 2012-08-06
+collection: posts
 tags: 
 - Powershell
 ---
