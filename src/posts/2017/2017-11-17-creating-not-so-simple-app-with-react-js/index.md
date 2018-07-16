@@ -1,10 +1,12 @@
 ---
-layout: post.html
+layout: post.ejs
+title: Создание не самого простого Web-приложения с помощью TypeScript, ReactJS и более чем 20 вспомогательных библиотек.
+date: 2012-08-06
+collection: posts
 tags: 
 - React
 - JavaScript
 - TypeScript
-title: Создание не самого простого Web-приложения с помощью TypeScript, ReactJS и более чем 20 вспомогательных библиотек.
 ---
 
 Эта статья задумана как некая попытка собрать в одном месте набор инструментов и
