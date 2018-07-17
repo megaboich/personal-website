@@ -3,4 +3,6 @@ layout: post.ejs
 title: My projects
 ---
 
-TBD: My projects
+This is a list of projects that I do like to spend my free time on.
+
+## TBD
