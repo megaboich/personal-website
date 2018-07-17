@@ -181,7 +181,10 @@ And view:
 </div>
 ```
 
-At this point after compiling and fixing some minor problems there should be available working widget at url like this : http://localhost/reader/RssReader/Widget?feedUrl=http%3A%2F%2Fnews.google.com%2Fnews%3Ftopic%3Db%26output%3Drss&topCount=10
+At this point after compiling and fixing some minor problems there should be available working widget at url like this:
+```
+ http://localhost/reader/RssReader/Widget?feedUrl=http%3A%2F%2Fnews.google.com%2Fnews%3Ftopic%3Db%26output%3Drss&topCount=10
+```
 
 And you should get view like this:
 ![](initialWidgetView_4.png)
@@ -246,11 +249,12 @@ And this is View:
 
 This is OpenSocial Gadget Xml, and it contains all information to render gadget in container. Google have good [documentation](http://code.google.com/intl/uk-UA/apis/gadgets/docs/gs.html) about this. In ModulePrefs section located copyright attributes and required features. UserPref sections contains user preferences that will be available to user. Access to this preferences is performed via OpenSocial Javascript API in WidgetHelper.js. Section Content is the container for HTML, CSS, Javascript. Here goes rendering of the Widget action.
 
-So, now you should have a working gadget XML available at url like this: http://localhost/reader/OpenSocial/RssFeedGadget?feedUrl=http%3A%2F%2Fnews.google.com%2Fnews%3Ftopic%3Db%26output%3Drss&topCount=10
-
+So, now you should have a working gadget XML available at url like this: 
+```
+http://localhost/reader/OpenSocial/RssFeedGadget?feedUrl=http%3A%2F%2Fnews.google.com%2Fnews%3Ftopic%3Db%26output%3Drss&topCount=10
+```
 
 ![](gadgetXml_2.png)
-
 
 ## Deploy gadget to container.
 

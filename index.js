@@ -41,8 +41,8 @@ Metalsmith(__dirname)
   .use(
     watch({
       paths: {
+        "layouts/**/*": "**/*",
         "${source}/**/*": true,
-        "layouts/**/*": true
       },
       livereload: false
     })

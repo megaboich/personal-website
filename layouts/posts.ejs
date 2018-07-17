@@ -3,16 +3,23 @@
 <body>
 <div class="container">
   <% include partials/top-menu %>
-
-  <h1><%= title %></h1>
   
+  <br/>
+  <br/>
+  <h1 class="title"><%= title %></h1>
+  
+  <div class="content">
   <%- contents %>
+  </div>
   <!-- Links to all posts: -->
   <% collections.posts.forEach(post => { %>
     <li>
       <a href="/<%= post.path.replace('index.html', '') %>"><%= post.title %></a>
     </li>
   <% }) %>
+
+  <br/>
+  <br/>
 
 </body>
 </div>
