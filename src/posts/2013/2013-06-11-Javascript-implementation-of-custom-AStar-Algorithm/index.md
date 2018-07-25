@@ -2,6 +2,7 @@
 layout: post.ejs
 title: Javascript implementation of custom A-Star algorithm
 date: 2013-06-11
+readingTimeInMinutes: 3
 collection: posts
 tags: JavaScript
 ---

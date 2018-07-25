@@ -2,6 +2,7 @@
 layout: post.ejs
 title: Setting up Git-Svn from very beginning
 date: 2016-04-02
+readingTimeInMinutes: 3
 collection: posts
 tags: Git Svn
 ---

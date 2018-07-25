@@ -1,7 +1,7 @@
 ---
 layout: post.ejs
 title: Создание не самого простого Web-приложения с помощью TypeScript, ReactJS и более чем 20 вспомогательных библиотек.
-date: 2012-08-06
+date: 2017-11-17
 collection: posts
 tags: 
 - React

@@ -3,6 +3,7 @@ layout: post.ejs
 title: Creating OpenSocial gadget with Asp.Net MVC
 collection: posts
 date: 2011-11-07
+readingTimeInMinutes: 7
 tags: 
 - OpenSocial
 - C#
