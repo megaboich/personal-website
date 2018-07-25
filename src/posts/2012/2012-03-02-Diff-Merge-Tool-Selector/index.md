@@ -2,6 +2,7 @@
 layout: post.ejs
 title: Diff Merge Tool Selector
 date: 2012-03-02
+readingTimeInMinutes: 3
 collection: posts
 tags: Tools
 ---

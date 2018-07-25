@@ -15,6 +15,9 @@ console.log("");
 
 Metalsmith(__dirname)
   .metadata({
+    readingTimeInMinutes: undefined,
+    date: undefined,
+    tags: undefined,
     title: "My Static Site & Blog",
     description: "It's about saying »Hello« to the World.",
     generator: "Metalsmith",
@@ -42,7 +45,7 @@ Metalsmith(__dirname)
     watch({
       paths: {
         "layouts/**/*": "**/*",
-        "${source}/**/*": true,
+        "${source}/**/*": true
       },
       livereload: false
     })

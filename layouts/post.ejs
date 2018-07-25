@@ -8,9 +8,31 @@
     <br/>
     <h1 class="title"><%= title %></h1>
     
+    
+    <div class="tags has-addons">
+      <%if (date) { %>
+        <span class="tag"><%= date.toLocaleDateString("en-US", { year: 'numeric', month: 'long', day: 'numeric' }) %></span>
+      <% } %>
+      <%if (readingTimeInMinutes) { %>
+        <span class="tag is-primary"><%= readingTimeInMinutes %> min read</span>
+      <% } %>
+    </div>
+      
     <div class="content">
       <%- contents %>
     </div>
+
+    <%if (tags) { %>
+    <div class="tags has-addons">
+      <span class="tag is-info">Tags</span>
+      <span class="tag">
+        <% if(typeof tags === "string"){ tags = [tags] } %>
+        <% tags.forEach(tag => { %>
+          <span><%= tag %></span><span>&nbsp;&nbsp;</span>
+        <% }) %>
+      </span>
+    </div>
+    <% } %>
 
     <br/>
     <br/>
