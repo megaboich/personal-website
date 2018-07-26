@@ -1,5 +1,5 @@
 ---
-layout: post.ejs
+layout: post.njk
 title: Setting up Git-Svn from very beginning
 date: 2016-04-02
 readingTime: 3

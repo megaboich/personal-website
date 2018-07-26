@@ -1,5 +1,5 @@
 ---
-layout: post.ejs
+layout: post.njk
 title: PowerShell View Engine - Asp style
 date: 2012-08-06
 readingTime: 5

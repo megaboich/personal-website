@@ -1,5 +1,5 @@
 ---
-layout: post.ejs
+layout: post.njk
 ---
 
 This is a personal website!
