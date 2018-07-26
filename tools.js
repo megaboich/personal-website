@@ -11,7 +11,15 @@ function cutExcerpt(contents) {
   return strContent;
 }
 
+function normalizeTags(tags) {
+  if (typeof tags === "string") {
+    return [tags];
+  }
+  return tags || [];
+}
+
 module.exports = {
   fixPath,
-  cutExcerpt
+  cutExcerpt,
+  normalizeTags
 };

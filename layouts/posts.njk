@@ -1,46 +1,41 @@
-{% include "partials/header.njk" %}
+{% extends "base.njk" %}
+{% import "macro/tags.njk" as tagsMacro %}
 
-<body>
-  <div class="container">
-    {% include "partials/top-menu.njk" %}
+{% block main %}
+  <h1 class="title">{{title}}</h1>
 
-    <br/>
-    <br/>
-    <h1 class="title">{{title}}</h1>
+  <div class="content">
+    {{ contents | safe }}
+  </div>
 
-    <div class="content">
-      {{ contents | safe }}
-    </div>
+  <!-- Links to all posts: -->
+  {% for post in collections.posts %}
+    <div class="card">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <a class="title is-4" href="{{ tools.fixPath(post.path) }}">
+              {{ post.title }}
+            </a>
+            <br/>
+            <br/>
 
-    <!-- Links to all posts: -->
-    {% for post in collections.posts %}
-      <div class="card">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <a class="title is-4" href="{{ tools.fixPath(post.path) }}">
-                {{ post.title }}
-              </a>
-            </div>
-          </div>
+            {{ tagsMacro.renderCombinedTags(tools.normalizeTags(post.tags), post.date, post.readingTime) }}
 
-          <div class="content">
-            <div>
+            <div class="content">
               {{ tools.cutExcerpt(post.contents) |safe }}
             </div>
-            <br/>
-            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+            <a class="has-text-primary" href="{{ tools.fixPath(post.path) }}">
+              Read more ->
+            </a>
           </div>
         </div>
-      </div>
-      <br/>
-    {% else %}
-      <p>No posts yet</p>
-    {% endfor %}
 
+      </div>
+    </div>
     <br/>
-    <br/>
-  </div>
-</section>
-</body>
-</html>
+  {% else %}
+    <p>No posts yet</p>
+  {% endfor %}
+
+{% endblock %}
