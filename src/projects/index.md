@@ -1,5 +1,5 @@
 ---
-layout: post.ejs
+layout: post.njk
 title: My projects
 ---
 

@@ -1,0 +1,48 @@
+<nav id="navbar" class="navbar has-shadow is-spaced">
+    <div class="navbar-brand">
+        <div class="navbar-item is-uppercase has-text-primary">
+            <span class="has-text-warning">olek</span>
+            <span class="has-text-primary">boiko</span>
+            <span class="has-text-grey-lighter">.com</span>
+        </div>
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div class="navbar-menu" id="navMenu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="/">Main</a>
+            <a class="navbar-item" href="/projects">Projects</a>
+            <a class="navbar-item" href="/posts">Posts</a>
+        </div>
+    </div>
+</nav>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array
+            .prototype
+            .slice
+            .call(document.querySelectorAll('.navbar-burger'), 0);
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el
+                        .classList
+                        .toggle('is-active');
+                    $target
+                        .classList
+                        .toggle('is-active');
+                });
+            });
+        }
+    });
+</script>

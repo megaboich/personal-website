@@ -1,5 +1,5 @@
 ---
-layout: post.ejs
+layout: post.njk
 title: Javascript implementation of custom A-Star algorithm
 date: 2013-06-11
 readingTime: 3

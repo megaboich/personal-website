@@ -1,5 +1,5 @@
 ---
-layout: post.ejs
+layout: post.njk
 title: Diff Merge Tool Selector
 date: 2012-03-02
 readingTime: 3

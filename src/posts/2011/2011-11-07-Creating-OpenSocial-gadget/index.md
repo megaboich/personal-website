@@ -1,5 +1,5 @@
 ---
-layout: post.ejs
+layout: post.njk
 title: Creating OpenSocial gadget with Asp.Net MVC
 collection: posts
 date: 2011-11-07
