@@ -2,11 +2,12 @@
 layout: post.ejs
 title: Setting up Git-Svn from very beginning
 date: 2016-04-02
-readingTimeInMinutes: 3
+readingTime: 3
 collection: posts
 tags: Git Svn
 ---
 This post is a very short instruction how to set up and configure running git-svn with legacy SVN repository.
+<!--cut-->
 
 ## Create GIT repository
 First of all it is necessary to init GIT repository, clone it from SVN. And it is good to have some number of recent commits.

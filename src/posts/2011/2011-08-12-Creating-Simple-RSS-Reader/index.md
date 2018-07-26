@@ -3,13 +3,13 @@ layout: post.ejs
 title: Creating Simple RSS Reader Web application with C# and Asp.Net MVC.
 collection: posts
 date: 2011-08-12
-readingTimeInMinutes: 4
+readingTime: 4
 tags: 
 - C#
 - RSS
 - Asp.Net MVC
 ---
-In this article I'll create simple web application using Microsoft Asp.Net MVC framework. The main functionality is to read RSS feed and show feed contents in simple HTML view.
+In this article I'll create simple web application using Microsoft Asp.Net MVC framework. The main functionality is to read RSS feed and show feed contents in simple HTML view.<!--cut-->
 
 ## Step 1. Create Empty MVC Application.
 
