@@ -2,11 +2,11 @@
 layout: post.ejs
 title: Diff Merge Tool Selector
 date: 2012-03-02
-readingTimeInMinutes: 3
+readingTime: 3
 collection: posts
 tags: Tools
 ---
-DiffMergeSelector might be a helpful tool in case you have several favorite diff/merge tools. It works like "proxy" between your diff tools and your IDE, SVN, Git, Mercurial or any other development tool.
+DiffMergeSelector might be a helpful tool in case you have several favorite diff/merge tools. It works like "proxy" between your diff tools and your IDE, SVN, Git, Mercurial or any other development tool.<!--cut-->
 For example you can configure Tortoise SVN to use DiffMergeSelector as external merge tool:
 
 ![](svn-settings.png)

@@ -3,13 +3,13 @@ layout: post.ejs
 title: Creating OpenSocial gadget with Asp.Net MVC
 collection: posts
 date: 2011-11-07
-readingTimeInMinutes: 7
+readingTime: 7
 tags: 
 - OpenSocial
 - C#
 - Asp.Net MVC
 ---
-[OpenSocial](http://docs.opensocial.org/display/OS/Home) is a great standard that allows implement Web-gadgets for various web-sites and portals (they are called OpenSocial Containers). Initially developed for Social Networks and driven by Google and [Google gadgets](http://code.google.com/apis/gadgets/) this standart is also becoming popular in corporate web portals sector. Currently such vendors as IBM, SAP, Cisco and many others have support for OpenSocial in theirs corporate products. All this success simply explained by the fact that OpenSocial allows quickly integrate gadgets to various of host portals.
+[OpenSocial](http://docs.opensocial.org/display/OS/Home) is a great standard that allows implement Web-gadgets for various web-sites and portals (they are called OpenSocial Containers). Initially developed for Social Networks and driven by Google and [Google gadgets](http://code.google.com/apis/gadgets/) this standart is also becoming popular<!--cut--> in corporate web portals sector. Currently such vendors as IBM, SAP, Cisco and many others have support for OpenSocial in theirs corporate products. All this success simply explained by the fact that OpenSocial allows quickly integrate gadgets to various of host portals.
 
 I will use Simple RSS reader Web application that I have created in previous article. I am going to implement OpenSocial integration, so I will able to put my gadget with RSS to any OpenSocial container.
 

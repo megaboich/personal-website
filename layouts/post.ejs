@@ -13,8 +13,8 @@
       <%if (date) { %>
         <span class="tag"><%= date.toLocaleDateString("en-US", { year: 'numeric', month: 'long', day: 'numeric' }) %></span>
       <% } %>
-      <%if (readingTimeInMinutes) { %>
-        <span class="tag is-primary"><%= readingTimeInMinutes %> min read</span>
+      <%if (readingTime) { %>
+        <span class="tag is-primary"><%= readingTime %> min read</span>
       <% } %>
     </div>
       

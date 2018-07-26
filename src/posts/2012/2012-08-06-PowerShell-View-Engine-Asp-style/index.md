@@ -2,7 +2,7 @@
 layout: post.ejs
 title: PowerShell View Engine - Asp style
 date: 2012-08-06
-readingTimeInMinutes: 5
+readingTime: 5
 collection: posts
 tags: 
 - Powershell
@@ -13,7 +13,7 @@ Hi everyone. In this article I want to describe my custom view engine for PowerS
 2. Support of nested Views, inline PowerShell code.
 3. Using Asp-style separators <%...%>.
 4. Works everywhere, only PowerShell 2.0 is required without additional tweaks.
-
+<!--cut-->
 First of all I was trying to find something already implemented, but with bad luck. Someone tries Razor engine, but this is very complicated and requires additional tweaks. Someone indeed implemented their own engines, but with some custom syntax and with poor functionality. So when a bright idea came into my mind I implemented my own view engine.
 
 Here is screenshot of view to use with my engine.

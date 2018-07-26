@@ -2,14 +2,14 @@
 layout: post.ejs
 title: Javascript implementation of custom A-Star algorithm
 date: 2013-06-11
-readingTimeInMinutes: 3
+readingTime: 3
 collection: posts
 tags: JavaScript
 ---
 Recently I had a lot of interest for Javascript and decided to implement something funny and interesting.
 For me it was a problem of finding a way through the maze.
 So, I searched a bit and found that this kind of problems are usually solved with path finding algorithms
-and one of those is A-Star.
+and one of those is A-Star<!--cut-->.
 After sore investigating I found very good article by Patrick Lester ([A-Star Pathfinding for Beginners](http://www.gamedev.net/page/resources/_/technical/artificial-intelligence/a-pathfinding-for-beginners-r2003)).
 My interest progressed to this demo implementation, and it is possible to play with it a bit right here.
 
