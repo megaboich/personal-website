@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: Создание не самого простого Web-приложения с помощью TypeScript, ReactJS и более чем 20 вспомогательных библиотек.
+title: "[Draft] Создание не самого простого Web-приложения с помощью TypeScript, ReactJS и более чем 20 вспомогательных библиотек."
 date: 2017-11-17
 collection: posts
 tags: 
@@ -27,3 +27,5 @@ tags:
 * Markdown-it.
 * Google API sign in.
 * Локализация.
+
+//TODO: finish this someday
