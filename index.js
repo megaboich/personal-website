@@ -14,6 +14,13 @@ console.log(chalk.black.bgGreen(" New blog generator 2.0 "));
 console.log(figlet.textSync("Cool Blog"));
 console.log("");
 
+const cmdParams = commander
+  .version("0.1.0")
+  .option("-b, --build", "Build mode")
+  .parse(process.argv);
+
+const isBuild = !!cmdParams.build;
+
 const defMetadata = {
   readingTime: undefined,
   date: undefined,
@@ -25,27 +32,28 @@ const defMetadata = {
   tools: tools
 };
 
-Metalsmith(__dirname)
-  .metadata({ ...defMetadata })
-  .source("./src")
-  .destination("./build")
-  .clean(true)
-  .use((files, metalsmith, done) => {
-    setImmediate(done);
-    metalsmith.metadata({ ...defMetadata });
+const metal = Metalsmith(__dirname);
+metal.metadata({ ...defMetadata });
+metal.source("./src");
+metal.destination("./build");
+metal.clean(true);
+metal.use((files, metalsmith, done) => {
+  setImmediate(done);
+  metalsmith.metadata({ ...defMetadata });
+});
+metal.use(markdown());
+metal.use(
+  collections({
+    posts: {
+      pattern: "*.md",
+      sortBy: "date",
+      reverse: true
+    }
   })
-  .use(markdown())
-  .use(
-    collections({
-      posts: {
-        pattern: "*.md",
-        sortBy: "date",
-        reverse: true
-      }
-    })
-  )
-  .use(layouts())
-  .use(
+);
+metal.use(layouts());
+if (!isBuild) {
+  metal.use(
     watch({
       paths: {
         "layouts/**/*": "**/*",
@@ -53,15 +61,16 @@ Metalsmith(__dirname)
       },
       livereload: false
     })
-  )
-  .use(
+  );
+  metal.use(
     serve({
       port: 8099,
       verbose: true
     })
-  )
-  .build(function(err, files) {
-    if (err) {
-      throw err;
-    }
-  });
+  );
+}
+metal.build(function (err, files) {
+  if (err) {
+    throw err;
+  }
+});
