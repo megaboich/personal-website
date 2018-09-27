@@ -180,7 +180,11 @@ And view:
 	
 Also I wrote a little CSS style sheet "Rss.css" to prettify results.
 
-That's all. Now Web application will show top 10 items from RSS feed specified in rssUrl url parameter. For example let's show Amazon feed, my url looks like this: http://localhost:26807/?rssUrl=http://www.amazon.com/rss/tag/smartphone/popular/ref=tag_rsh_hl_erso.
+That's all. Now Web application will show top 10 items from RSS feed specified in rssUrl url parameter. For example let's show Amazon feed, my url looks like this: 
+
+```bash
+http://localhost:26807/?rssUrl=http://www.amazon.com/rss/tag/smartphone/popular/ref=tag_rsh_hl_erso
+```
 
 This is what result page looks like.
 
