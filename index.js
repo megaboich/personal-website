@@ -69,7 +69,7 @@ if (!isBuild) {
     })
   );
 }
-metal.build(function (err, files) {
+metal.build(function (err) {
   if (err) {
     throw err;
   }
