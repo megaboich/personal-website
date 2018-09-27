@@ -3,7 +3,7 @@ layout: post.njk
 title: Home page
 ---
 
-Welcome to this website. My name is Oleksandr Boiko, and you currently are at my official web page. It contains some personal information (which is considered public) as well as some technology and programming stuff and experiments.
+Welcome, my name is Oleksandr Boiko, and you currently are at my official web site. It contains some information about me as well as some technology, programming stuff and experiments.
 
 * [Technical blog and experiments](/posts)
 * Some Open Source [projects](/projects) which I do when bored
