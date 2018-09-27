@@ -4,6 +4,10 @@ body {
     min-height: 100vh;
 }
   
-.content {
+.section-content {
     flex: 1;
+}
+
+.content pre {
+    padding: 0;
 }
