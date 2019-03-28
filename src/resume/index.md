@@ -12,7 +12,7 @@ While keeping an eye on latest technologies I prefer to keep balance and use the
 ### Experience
 
 * **ServiceNow** — ​ Senior Front End React / AngularJS Developer *(Amsterdam, 2018 - present)* <br/>
-    Working with various front-end implementations of a complex enterprise application.
+    Working with various front-end implementations/components of a complex enterprise application.
     
 * **Semmtech** — ​ Senior Software Engineer *(Hoofddorp, 2016 - 2018)* <br/>
     Successfully established a modern frontend development process in order to switch from traditional Java web-apps to SPA frontend and REST API backend. Coaching and mentoring for junior JavaScript newcomers and backend Java developers. Designed and implemented a reusable components library used for several frontend projects written in TypeScript and ReactJS.
