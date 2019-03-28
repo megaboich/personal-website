@@ -269,12 +269,12 @@ GraphQL query result
 
 ## HTTP API Summary
 
-HTTP is a main transport protocol for the internet. It is widely used for every application: mobile, desktop, embedded or web.
+- HTTP is a main transport protocol for the internet. It is widely used for every application: mobile, desktop, embedded or web.
 
-SOAP is a quite old and hard to use protocol. But it is still used in enterprises.
+- HTTP APIs is a way of communications between applications, devices and services.
 
-HTTP APIs is a way of communications between applications, devices and services.
+- SOAP is a quite old and hard to use protocol. But it is still used in enterprises.
 
-Most of modern APIs use various JSON over HTTP implementation more or less REST compliant.
+- Most of modern APIs use various JSON over HTTP implementation more or less REST compliant.
 
-GraphQL is a new way of writing and designing APIs which is using special query lanquage to request data and provides JSON as output.
+- GraphQL is a new way of writing and designing APIs which is using special query lanquage to request data and provides JSON as output.
