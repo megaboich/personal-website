@@ -11,3 +11,12 @@ body {
 .content pre {
     padding: 0;
 }
+
+@media screen and (min-width: 700px) {
+    .project-card img {
+        float: right;
+        margin-left: 40px;
+        max-width: 400px;
+    }
+}
+

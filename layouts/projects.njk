@@ -1,0 +1,40 @@
+{% extends "base.njk" %}
+{% import "macro/tags.njk" as tagsMacro %}
+
+{% block main %}
+  <h1 class="title">{{title}}</h1>
+
+  <div class="content">
+    {{ contents | safe }}
+  </div>
+
+  <!-- Links to all projects: -->
+  {% for post in collections.projects %}
+    <div class="card project-card">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <a class="title is-4" href="{{ post.repo_url }}">
+              {{ post.title }}
+            </a>
+            <br/>
+            <br/>
+
+            <div class="field is-grouped is-grouped-multiline">   
+              {{ tagsMacro.renderTags(tools.normalizeTags(post.tags)) }}
+            </div>
+
+            <div class="content">
+              {{ post.contents | safe }}
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <br/>
+  {% else %}
+    <p>No projects yet</p>
+  {% endfor %}
+
+{% endblock %}
