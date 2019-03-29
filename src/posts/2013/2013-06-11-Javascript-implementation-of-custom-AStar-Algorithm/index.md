@@ -6,26 +6,30 @@ readingTime: 3
 collection: posts
 tags: JavaScript
 ---
-Recently I had a lot of interest for Javascript and decided to implement something funny and interesting.
+
+Recently I had a lots of interest in Javascript and decided to implement something funny and interesting.
 For me it was a problem of finding a way through the maze.
-So, I searched a bit and found that this kind of problems are usually solved with path finding algorithms
-and one of those is A-Star<!--cut-->.
+So, I searched a bit and found that this kind of problems are usually solved with path finding algorithms and one of those is A-Star<!--cut-->.
 After sore investigating I found very good article by Patrick Lester ([A-Star Pathfinding for Beginners](http://www.gamedev.net/page/resources/_/technical/artificial-intelligence/a-pathfinding-for-beginners-r2003)).
 My interest progressed to this demo implementation, and it is possible to play with it a bit right here.
 
 So, here are the rules:
 
-* Double click on the cells to build walls
-* Select cell, then press "Set Start" or "Set Finish" buttons to change start/destination point
+- Double click on the cells to build / erase walls
+- Select cell, then press "Set Start" or "Set Finish" buttons to change start/destination point
+- Click on the "Go!" button to calculate a path.
 
 <div>
   <link rel="stylesheet" href="styles.css">
   
   <button id="gen-field-btn" class="btn btn-default">Generate New Field</button>
-  <span class="input-group-addon">Width</span>
+  <br/>
+  <label for="field-width" class="input-group-addon">Width</label>
   <input id="field-width" type="text" class="form-control" value="10"/>
-  <span class="input-group-addon">Height</span>
+  <br/>
+  <label for="field-height" class="input-group-addon">Height</label>
   <input id="field-height" type="text" class="form-control" value="10"/>
+  <br/>
   
   <div class="panel panel-default">
     <div class="panel-body">
