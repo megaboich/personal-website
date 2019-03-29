@@ -6,6 +6,7 @@ readingTime: 3
 collection: posts
 tags: Tools
 ---
+
 DiffMergeSelector might be a helpful tool in case you have several favorite diff/merge tools. It works like "proxy" between your diff tools and your IDE, SVN, Git, Mercurial or any other development tool.<!--cut-->
 For example you can configure Tortoise SVN to use DiffMergeSelector as external merge tool:
 
@@ -21,4 +22,4 @@ If you are going to use the same tool for a known timespan you can skip this ste
 
 DiffMergeSelector allows customization of command line for each Diff Tool, for example I was able to easily configure it to run Meld (which by fact is running by Python).
 
-In case you are interested there are source code on [Github](https://github.com/megaboich/DiffMerge-Tool-Selector).
+In case you are interested source code is available on [Github](https://github.com/megaboich/DiffMerge-Tool-Selector).

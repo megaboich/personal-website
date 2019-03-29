@@ -4,12 +4,13 @@ title: Creating Simple RSS Reader Web application with C# and Asp.Net MVC.
 collection: posts
 date: 2011-08-12
 readingTime: 4
-tags: 
-- C#
-- RSS
-- Asp.Net MVC
+tags:
+  - C#
+  - RSS
+  - Asp.Net MVC
 ---
-In this article I'll create simple web application using Microsoft Asp.Net MVC framework. The main functionality is to read RSS feed and show feed contents in simple HTML view.<!--cut-->
+
+In this article I'll create simple web application using Microsoft Asp.Net MVC framework. The main functionality is to read RSS feed and to show feed contents in simple HTML view.<!--cut-->
 
 ## Step 1. Create Empty MVC Application.
 
@@ -33,7 +34,7 @@ Then, after reading some very helpful [documentation](http://argotic.codeplex.co
 
 The model:
 
-``` csharp
+```csharp
 public class RssArticle
 {
 	public Uri Link { get; set; }
@@ -57,7 +58,7 @@ public class RssFeedContent
 
 And here goes the service:
 
-``` csharp
+```csharp
 public class RssReaderService: IRssReaderService
 {
 	public RssReaderService()
@@ -122,12 +123,12 @@ public class RssReaderService: IRssReaderService
 	}
 }
 ```
-	
+
 As you can see RssReaderService is able to read RSS and Atom feed formats.
 
 Then, next step is to use our new service from controller and update view to display the feed. So, the controller:
-    
-``` csharp
+
+```csharp
 public class HomeController : Controller
 {
 	public ActionResult Index(string rssUrl)
@@ -140,8 +141,8 @@ public class HomeController : Controller
 ```
 
 And view:
-    
-``` csharp
+
+```csharp
 @model SimpleRssReader.Models.RssFeedContent
 @{
 	Layout = null;
@@ -177,12 +178,12 @@ And view:
 </body>
 </html>
 ```
-	
-Also I wrote a little CSS style sheet "Rss.css" to prettify results.
 
-That's all. Now Web application will show top 10 items from RSS feed specified in rssUrl url parameter. For example let's show Amazon feed, my url looks like this: 
+Also I've created a little CSS style sheet `Rss.css` to prettify results.
 
-```bash
+That's all. Now Web application will show top 10 items from RSS feed specified in `rssUrl` query parameter. For example let's show Amazon feed, my url looks like this:
+
+```
 http://localhost:26807/?rssUrl=http://www.amazon.com/rss/tag/smartphone/popular/ref=tag_rsh_hl_erso
 ```
 
