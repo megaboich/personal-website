@@ -48,6 +48,11 @@ metal.use(
       pattern: "*.md",
       sortBy: "date",
       reverse: true
+    },
+    projects: {
+      pattern: "*.md",
+      sortBy: "date",
+      reverse: true
     }
   })
 );
