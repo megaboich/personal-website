@@ -1,10 +1,11 @@
 ---
-layout: post.njk
+layout: post.hbs
 title: Diff Merge Tool Selector
 date: 2012-03-02
 readingTime: 3
 collection: posts
-tags: Tools
+tags:
+  - Tools
 ---
 
 DiffMergeSelector might be a helpful tool in case you have several favorite diff/merge tools. It works like "proxy" between your diff tools and your IDE, SVN, Git, Mercurial or any other development tool.<!--cut-->

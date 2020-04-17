@@ -1,5 +1,5 @@
 ---
-layout: post.njk
+layout: post.hbs
 title: HTTP for beginners
 date: 2019-03-27
 readingTime: 10
@@ -152,9 +152,9 @@ Body:
 
 ```json
 {
-	"apikey": "MW5TK02DUDMSH9A4",
-	"username": "mega.boichetq",
-	"userkey": "UA27FF66EENM8BSR"
+  "apikey": "MW5TK02DUDMSH9A4",
+  "username": "mega.boichetq",
+  "userkey": "UA27FF66EENM8BSR"
 }
 ```
 
@@ -162,7 +162,7 @@ Response:
 
 ```json
 {
-	"token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NTM3ODQyNTgsImlkIjoiIiwib3JpZ19pYXQiOjE1NTM2OTc4NTgsInVzZXJpZCI6NTEzNDk3LCJ1c2VybmFtZSI6Im1lZ2EuYm9pY2hldHEifQ.izEns8bjBUI6MHAPlVhWxfti-Ynyx6VxZbGnvTXONcPq-lW6R0ojGYtBUNs04SF4QYyPcn06lm5z9dmxs83Av3-ZdM6y-aeunuvY_ioy4VXpzJw5L_CiPmmQUTTGnHEAzJRlZodU18TGwMB_hAxwvEJD_BN1nhafU5ZvW43kL4KVh4PyG1N7Gh-ZZsPcKZRzI3nCIHVkfcp6RkNannbnABeAnLguDjvwfhOz3SQQtNfhc9WN0-OFrnP_IfpKJnQxGo0v7FxP8oSmFHCUqigDf8qlsMPJ3LfKJ7mB8AeN0Hh_q-oRU5Jnl-E-RZpPHLqeveTJcTIjfk-44V9SVHk3ow"
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NTM3ODQyNTgsImlkIjoiIiwib3JpZ19pYXQiOjE1NTM2OTc4NTgsInVzZXJpZCI6NTEzNDk3LCJ1c2VybmFtZSI6Im1lZ2EuYm9pY2hldHEifQ.izEns8bjBUI6MHAPlVhWxfti-Ynyx6VxZbGnvTXONcPq-lW6R0ojGYtBUNs04SF4QYyPcn06lm5z9dmxs83Av3-ZdM6y-aeunuvY_ioy4VXpzJw5L_CiPmmQUTTGnHEAzJRlZodU18TGwMB_hAxwvEJD_BN1nhafU5ZvW43kL4KVh4PyG1N7Gh-ZZsPcKZRzI3nCIHVkfcp6RkNannbnABeAnLguDjvwfhOz3SQQtNfhc9WN0-OFrnP_IfpKJnQxGo0v7FxP8oSmFHCUqigDf8qlsMPJ3LfKJ7mB8AeN0Hh_q-oRU5Jnl-E-RZpPHLqeveTJcTIjfk-44V9SVHk3ow"
 }
 ```
 
@@ -182,23 +182,23 @@ Response:
 
 ```json
 {
-	"data": [
-		{
-			"aliases": [],
-			"banner": "graphical/81797-g2.jpg",
-			"firstAired": "1999-10-20",
-			"id": 81797,
-			"network": "Fuji TV",
-			"overview": "It was a time when pirates ruled the seas. Several bands of pirates were battling over the great hidden treasure, One Piece, which was left by the now legendary pirate captain, Gold Roger. There was a young boy who admired the pirates, his name was Monkey D. Luffy. One day, he mistakenly eats the devil's fruit and turns himself into a rubber human being.\r\n\r\nTen years have passed since that incident. Luffy sets out to sail all alone. He sets out to become a great pirate captain and that's when his great adventure begins. \"I'm going to be the Pirate King! I'm going to get One Piece!\".",
-			"seriesName": "One Piece",
-			"slug": "one-piece",
-			"status": "Continuing"
-		}
-	]
+  "data": [
+    {
+      "aliases": [],
+      "banner": "graphical/81797-g2.jpg",
+      "firstAired": "1999-10-20",
+      "id": 81797,
+      "network": "Fuji TV",
+      "overview": "It was a time when pirates ruled the seas. Several bands of pirates were battling over the great hidden treasure, One Piece, which was left by the now legendary pirate captain, Gold Roger. There was a young boy who admired the pirates, his name was Monkey D. Luffy. One day, he mistakenly eats the devil's fruit and turns himself into a rubber human being.\r\n\r\nTen years have passed since that incident. Luffy sets out to sail all alone. He sets out to become a great pirate captain and that's when his great adventure begins. \"I'm going to be the Pirate King! I'm going to get One Piece!\".",
+      "seriesName": "One Piece",
+      "slug": "one-piece",
+      "status": "Continuing"
+    }
+  ]
 }
 ```
 
-#### REST is a set of rules and recomendations, not acually a protocol.
+#### REST is a set of rules and recommendations, not actually a protocol.
 
 REST determines how the API looks like. It stands for “Representational State Transfer”. It is a set of rules that developers follow when they create their API.
 
@@ -226,7 +226,7 @@ Main differences from REST:
 
 - You query your data with special GraphQL syntax instead of bogus urls and body parameters.
 - You can retrieve only required of fields of objects, no need to download unnecessary data.
-- Combinining several queries in one request.
+- Combining several queries in one request.
 - API schema and documentation are integrated thanks to GraphQL tooling and infrastructure.
 
 GraphQL query
@@ -247,23 +247,23 @@ GraphQL query result
 
 ```json
 {
-	"data": {
-		"author": {
-			"id": "7",
-			"name": "Robin Wieruch",
-			"avatarUrl": "https://domain.com/authors/7",
-			"articles": [
-				{
-					"name": "The Road to learn React",
-					"urlSlug": "the-road-to-learn-react"
-				},
-				{
-					"name": "React Testing Tutorial",
-					"urlSlug": "react-testing-tutorial"
-				}
-			]
-		}
-	}
+  "data": {
+    "author": {
+      "id": "7",
+      "name": "Robin Wieruch",
+      "avatarUrl": "https://domain.com/authors/7",
+      "articles": [
+        {
+          "name": "The Road to learn React",
+          "urlSlug": "the-road-to-learn-react"
+        },
+        {
+          "name": "React Testing Tutorial",
+          "urlSlug": "react-testing-tutorial"
+        }
+      ]
+    }
+  }
 }
 ```
 
@@ -277,4 +277,4 @@ GraphQL query result
 
 - Most of modern APIs use various JSON over HTTP implementation more or less REST compliant.
 
-- GraphQL is a new way of writing and designing APIs which is using special query lanquage to request data and provides JSON as output.
+- GraphQL is a new way of writing and designing APIs which is using special query language to request data and provides JSON as output.
