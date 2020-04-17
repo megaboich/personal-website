@@ -1,22 +1,19 @@
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-  
+
 .section-content {
-    flex: 1;
+  flex: 1;
 }
 
 .content pre {
-    padding: 0;
+  padding: 0;
 }
 
-@media screen and (min-width: 700px) {
-    .project-card img {
-        float: right;
-        margin-left: 40px;
-        max-width: 400px;
-    }
+.project-card-img {
+  float: right;
+  margin-left: 40px;
+  max-width: 400px;
 }
-

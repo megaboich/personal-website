@@ -1,5 +1,5 @@
 ---
-layout: post.njk
+layout: post.hbs
 title: Creating OpenSocial gadget with Asp.Net MVC
 collection: posts
 date: 2011-11-07
@@ -109,38 +109,38 @@ Initialy only loading animation is rendered and on `documentready` event followi
 I included jQuery to perform Ajax and DOM manipulations. Also there is custom script `WidgetHelper.js` to perform widget manipulation. This is facade for OpenSocial integration and it provides stubs when OpenSocial is not available.
 
 ```javascript
-(function($, undefined) {
-	function adjustHeight() {
-		if (typeof gadgets != 'undefined') {
-			gadgets.window.adjustHeight();
-		}
-	}
+(function ($, undefined) {
+  function adjustHeight() {
+    if (typeof gadgets != "undefined") {
+      gadgets.window.adjustHeight();
+    }
+  }
 
-	function getUserProperties(propList) {
-		if (typeof gadgets != 'undefined') {
-			var prefs = new gadgets.Prefs();
-			var props = {};
-			for (var i = 0; i < propList.length; ++i) {
-				props[propList[i]] = prefs.getString(propList[i]);
-			}
-			return props;
-		}
-		return null;
-	}
+  function getUserProperties(propList) {
+    if (typeof gadgets != "undefined") {
+      var prefs = new gadgets.Prefs();
+      var props = {};
+      for (var i = 0; i < propList.length; ++i) {
+        props[propList[i]] = prefs.getString(propList[i]);
+      }
+      return props;
+    }
+    return null;
+  }
 
-	function setTitle(newTitle) {
-		if (typeof gadgets != 'undefined') {
-			gadgets.window.setTitle(newTitle);
-		}
-	}
+  function setTitle(newTitle) {
+    if (typeof gadgets != "undefined") {
+      gadgets.window.setTitle(newTitle);
+    }
+  }
 
-	$.extend({
-		widgetHelper: {
-			adjustHeight: adjustHeight,
-			getUserProperties: getUserProperties,
-			setTitle: setTitle
-		}
-	});
+  $.extend({
+    widgetHelper: {
+      adjustHeight: adjustHeight,
+      getUserProperties: getUserProperties,
+      setTitle: setTitle
+    }
+  });
 })(jQuery);
 ```
 

@@ -1,10 +1,11 @@
 ---
-layout: post.njk
+layout: post.hbs
 title: Javascript implementation of custom A-Star algorithm
 date: 2013-06-11
 readingTime: 3
 collection: posts
-tags: JavaScript
+tags:
+  - JavaScript
 ---
 
 Recently I had a lots of interest in Javascript and decided to implement something funny and interesting.

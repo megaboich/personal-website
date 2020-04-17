@@ -1,5 +1,5 @@
 ---
-layout: post.njk
+layout: post.hbs
 title: "Résumé: Oleksandr Boiko"
 ---
 
@@ -11,10 +11,10 @@ While keeping an eye on latest technologies I prefer to keep balance and use the
 
 ### Experience
 
-- **ServiceNow** — ​ Senior Front End React / AngularJS Developer _(Amsterdam, 2018 - present)_ <br/>
+- **ServiceNow** — Senior Front End React / AngularJS Developer _(Amsterdam, 2018 - present)_ <br/>
   Working with various front-end implementations/components of a complex enterprise application. Refactoring and reimplementing old legacy functionality as well as adding new features. Leading role in gradually introducing static type checking (Flow JS) in the department.
 
-- **Semmtech** — ​ Senior Software Engineer _(Hoofddorp, 2016 - 2018)_ <br/>
+- **Semmtech** — Senior Software Engineer _(Hoofddorp, 2016 - 2018)_ <br/>
   Successfully established a modern frontend development process in order to switch from traditional Java web-apps to SPA frontend and REST API backend. Coaching and mentoring for junior JavaScript newcomers and backend Java developers. Designed and implemented a reusable components library used for several frontend projects written in TypeScript and ReactJS.
 
 - **ZyLAB** — Senior Software Engineer _(Amsterdam, 2015 -2016)_ <br/>
@@ -23,10 +23,10 @@ While keeping an eye on latest technologies I prefer to keep balance and use the
 - **MedeAnalytics** — Lead Software Engineer _(Kharkiv, Ukraine, 2013 - 2015)_ <br/>
   Created a new team and led a rapid development of new frontend functionality for multi-tenant SaaS platform for analysis of big data and reporting. Took part in all aspects of project lifecycle from planning and business analysis to system design, implementation, and deployment. Developed and successfully delivered a set of new features, also improved performance and simplified configuration of the product.
 
-- **EPAM** — ​ Senior Software Engineer _(Kharkiv, Ukraine, 2011 - 2013)_ <br/>
+- **EPAM** — Senior Software Engineer _(Kharkiv, Ukraine, 2011 - 2013)_ <br/>
   Participated in four different projects as backend and frontend developer. Design and implementation of real-time web-based application/widgets for monitoring trading events from stock market. Development of backend data access and processing layers, windows services, WCF services. Developed agile working process and established productive relations with customer. Interviewed new developers.
 
-- **Stella Systems** — ​ Software Engineer → Lead Software Engineer _(​Kharkiv, Ukraine, 2005 - 2011)_ <br/>
+- **Stella Systems** — Software Engineer → Lead Software Engineer _(Kharkiv, Ukraine, 2005 - 2011)_ <br/>
   Contributed to development of various parts of huge enterprise Web-application including backend services and frontend Web UI. Developed modules for analysis of historical data retrieved from OLAP and building forecasting reporting. Implemented exports to PDF, Excel. Developed lots of specific UI components for reporting, filtering and managing of hierarchical data structures. Participated in QCon San Francisco 2008. Enforced SCRUM process establishment in the company. Collaborated with a 20-member international software team. Consulting and helping for newcomers.
 
 - **Freelance** — Junior Developer _(Kharkiv, Ukraine, 2004 - 2005)_ <br/>
@@ -34,16 +34,16 @@ While keeping an eye on latest technologies I prefer to keep balance and use the
 
 ### Personal projects
 
-- **JavaScript Map Parser** ​ — ​ Open Source, Owner, Developer _(2007 - 2013)_ <br/>
-  Developed an extension for Visual Studio and Notepad++ that shows a map for JavaScript code in a separate panel. Got more than 250K downloads and 50 five-star reviews.
+- **LOGO playground** — Open Source, Owner, Developer _(2016 - 2018)_ <br/>
+  Online IDE for LOGO programming language with ability to write and execute programs directly in web browser. Is available at [logolang.github.io](https://logolang.github.io/).
 
-- **LOGO playground** ​ — ​ Open Source, Owner, Developer _(2016 - 2018)_ <br/>
-  Online IDE for LOGO programming language with ability to write and execute programs directly in web browser.
+- **JavaScript Map Parser** — Open Source, Owner, Developer _(2007 - 2013)_ <br/>
+  Developed an extension for Visual Studio and Notepad++ that shows a map for JavaScript code in a separate panel. Got more than 250K downloads and 50 five-star reviews.
 
 ### Technologies
 
 - **Programming languages** <br/>
-  JavaScript, TypeScript, HTML, CSS, Java, C#, SQL, Python, Powershell.
+  JavaScript, TypeScript, HTML, CSS, Java, C#, SQL, Python, PowerShell.
 
 - **Frameworks, libraries, technologies and tools** <br/>
   - Frontend: ReactJS, Redux, D3, RxJS, Angular

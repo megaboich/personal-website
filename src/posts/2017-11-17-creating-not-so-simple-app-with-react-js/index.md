@@ -1,12 +1,12 @@
 ---
-layout: post.njk
+layout: post.hbs
 title: "[Draft] Создание не самого простого Web-приложения с помощью TypeScript, ReactJS и более чем 20 вспомогательных библиотек."
 date: 2017-11-17
 collection: posts
-tags: 
-- React
-- JavaScript
-- TypeScript
+tags:
+  - React
+  - JavaScript
+  - TypeScript
 ---
 
 Эта статья задумана как некая попытка собрать в одном месте набор инструментов и
@@ -16,16 +16,16 @@ tags:
 
 План:
 
-* Введение и постановка задачи.
-* Скелет и структура приложения: TypeScript, Webpack, React, Mocha.
-* Внедрение зависимостей с Inversify (Dependency injection).
-* Конфигурация и сохранение пользовательских настроек.
-* CSS фреймворк Bulma + стили Bulmaswatch.
-* GoldenLayout.
-* CodeMirror.
-* LogoJS.
-* Markdown-it.
-* Google API sign in.
-* Локализация.
+- Введение и постановка задачи.
+- Скелет и структура приложения: TypeScript, Webpack, React, Mocha.
+- Внедрение зависимостей с Inversify (Dependency injection).
+- Конфигурация и сохранение пользовательских настроек.
+- CSS фреймворк Bulma + стили Bulmaswatch.
+- GoldenLayout.
+- CodeMirror.
+- LogoJS.
+- Markdown-it.
+- Google API sign in.
+- Локализация.
 
 //TODO: finish this someday

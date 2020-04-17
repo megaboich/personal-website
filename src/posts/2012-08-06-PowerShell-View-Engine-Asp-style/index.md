@@ -1,5 +1,5 @@
 ---
-layout: post.njk
+layout: post.hbs
 title: PowerShell Html Templating Engine - Asp style
 date: 2012-08-06
 readingTime: 5

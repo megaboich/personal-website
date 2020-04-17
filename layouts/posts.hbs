@@ -1,0 +1,39 @@
+{{#> main-layout }}
+{{#* inline "block-content" }}
+
+<h1 class="title">{{title}}</h1>
+
+{{{contents}}}
+
+<!-- Links to all posts: -->
+{{#each collections.posts}}
+<div class="card">
+    <div class="card-content">
+        <div class="media">
+            <div class="media-content">
+                <a class="title is-4" href="/{{#remove-index-from-url}}{{path}}{{/remove-index-from-url}}">
+                    {{ title }}
+                </a>
+
+                <br />
+                <br />
+
+                {{> tags-combined }}
+
+                {{#cut-excerpt}}
+                {{{contents}}}
+                {{/cut-excerpt}}
+                <div>
+                    <a class="has-text-primary" href="/{{#remove-index-from-url}}{{path}}{{/remove-index-from-url}}">
+                        Read more ->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+{{/each}}
+
+{{/inline}}
+{{/main-layout}}

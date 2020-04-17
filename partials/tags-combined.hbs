@@ -1,0 +1,31 @@
+<div class="field is-grouped is-grouped-multiline">
+    {{#xif " date || readingTime || tags " }}
+    <div class="control">
+        <div class="tags has-addons">
+            {{#if date}}
+            <span class="tag is-warning is-light">
+                {{#format-date}}{{{date}}}{{/format-date}}
+            </span>
+            {{/if}}
+            {{#if readingTime}}
+            <span class="tag">
+                {{readingTime}}
+                min read
+            </span>
+            {{/if}}
+        </div>
+    </div>
+
+    <div class="control">
+        <div class="tags">
+            {{#each tags}}
+            <span class="tag">
+                {{ this }}
+            </span>
+            {{/each}}
+        </div>
+    </div>
+
+    <br />
+    {{/xif}}
+</div>
