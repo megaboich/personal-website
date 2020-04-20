@@ -55,7 +55,7 @@ Fun project to get my hands to work with some technologies.
 
 Demo is deployed here: [https://megaboich.github.io/2048/](https://megaboich.github.io/2048/).
 
-Main goal of this project was to make me more familiar with TypeScript programming.
+Main goal of this project was to make me more familiar with TypeScript programming. Also here I used amazing JavaScript library for canvas rendering [PixiJS](https://www.pixijs.com/).
 
 ---
 

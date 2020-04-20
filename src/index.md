@@ -22,3 +22,5 @@ Sometimes I have some free time and urgent desire to code something different or
 When I do have something to share I try to write an article in my [blog](/posts/).
 
 E-mail: mega.boich@gmail.com
+
+<div id="main-home-photo-bg"></div>
