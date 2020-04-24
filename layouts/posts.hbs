@@ -1,10 +1,11 @@
 {{#> main-layout }}
+
+{{#* inline "head-bottom-content" }}
+{{/inline}}
+
 {{#* inline "block-content" }}
-
 <h1 class="title">{{title}}</h1>
-
 {{{contents}}}
-
 <!-- Links to all posts: -->
 {{#each collections.posts}}
 <div class="card">
@@ -34,6 +35,6 @@
 </div>
 <br />
 {{/each}}
-
 {{/inline}}
+
 {{/main-layout}}

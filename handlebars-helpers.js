@@ -16,13 +16,17 @@ module.exports = {
       return new Handlebars.SafeString(strContent.replace("index.html", ""));
     });
 
+    Handlebars.registerHelper("replace-underscores", function (options) {
+      const strContent = options.fn(this);
+      return new Handlebars.SafeString(strContent.replace(/_/g, "\xa0"));
+    });
+
     Handlebars.registerHelper("format-date", function (options) {
       const sourceData = options.fn(this);
       if (!sourceData) {
         return "";
       }
       const parsedDate = new Date(options.fn(this));
-      console.log("got this", parsedDate.getTime());
       return parsedDate.toLocaleDateString("en-US", {
         year: "numeric",
         month: "long",

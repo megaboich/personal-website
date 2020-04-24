@@ -1,11 +1,16 @@
 {{#> main-layout }}
-{{#* inline "block-content" }}
 
-<h1 class="title">{{title}}</h1>
-
-{{> tags-combined }}
-
-{{{contents}}}
-
+{{#* inline "head-bottom-content" }}
+<!-- Highlight js -->
+<link rel="stylesheet" href="/assets/js/highlight-js/styles/default.css">
+<script src="/assets/js/highlight-js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 {{/inline}}
+
+{{#* inline "block-content" }}
+<h1 class="title">{{title}}</h1>
+{{> tags-combined }}
+{{{contents}}}
+{{/inline}}
+
 {{/main-layout}}

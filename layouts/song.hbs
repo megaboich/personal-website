@@ -1,0 +1,13 @@
+{{#> main-layout }}
+
+{{#* inline "head-bottom-content" }}
+<link rel="stylesheet" type="text/css" href="/assets/css/song.css" />
+{{/inline}}
+
+{{#* inline "block-content" }}
+<h1 class="title">{{title}}</h1>
+{{> sound-cloud-inline }}
+{{#replace-underscores}}{{{contents}}}{{/replace-underscores}}
+{{/inline}}
+
+{{/main-layout}}

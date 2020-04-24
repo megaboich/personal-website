@@ -30,6 +30,7 @@ const defMetadata = {
   date: undefined,
   tags: undefined,
   title: undefined,
+  soundCloudId: undefined,
   description: "Oleksandr Boiko",
   tools: {
     currentYear: new Date().getFullYear()
@@ -63,6 +64,9 @@ metal.use(
       pattern: "*.md",
       sortBy: "date",
       reverse: true
+    },
+    chords: {
+      pattern: "*.md"
     }
   })
 );

@@ -1,0 +1,22 @@
+{{#> main-layout }}
+
+{{#* inline "head-bottom-content" }}
+{{/inline}}
+
+{{#* inline "block-content" }}
+<h1 class="title">{{title}}</h1>
+{{{contents}}}
+
+<!-- Links to all songs: -->
+<ul>
+    {{#each collections.chords}}
+    <li>
+        <a href="/{{path}}">
+            {{ title }}
+        </a>
+    </li>
+    {{/each}}
+</ul>
+{{/inline}}
+
+{{/main-layout}}
