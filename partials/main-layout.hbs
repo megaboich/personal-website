@@ -10,11 +10,6 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
     <script type="text/javascript" src="/assets/js/scripts.js"></script>
 
-    <!-- Highlight js -->
-    <link rel="stylesheet" href="/assets/js/highlight-js/styles/default.css">
-    <script src="/assets/js/highlight-js/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70363755-1"></script>
     <script>
@@ -23,6 +18,8 @@
         gtag('js', new Date());
         gtag('config', 'UA-70363755-1');
     </script>
+
+    {{>head-bottom-content}}
 </head>
 
 <body>
@@ -52,6 +49,9 @@
                 </a>
                 <a class="navbar-item" href="/posts/">
                     Blog
+                </a>
+                <a class="navbar-item" href="/chords/">
+                    Chords
                 </a>
             </div>
         </div>

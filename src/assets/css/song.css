@@ -1,0 +1,11 @@
+p {
+  margin: 0 !important;
+}
+
+code {
+  display: block;
+  padding: 0;
+  background-color: inherit;
+  margin-bottom: -6px;
+  margin-top: -4px;
+}
