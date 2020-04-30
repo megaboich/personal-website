@@ -16,6 +16,17 @@ body {
   opacity: 0.6;
 }
 
+#chords-img-bg {
+  background-image: url(../backgrounds/guitar.jpg);
+  position: fixed;
+  height: 1110px;
+  width: 800px;
+  top: -120px;
+  right: -340px;
+  z-index: -1;
+  transform: scale(0.7);
+}
+
 .section-content {
   flex: 1;
 }
