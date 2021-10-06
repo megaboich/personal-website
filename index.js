@@ -14,16 +14,20 @@ const cmdParams = commander
   .version("0.1.0")
   .option("-b, --build", "Build mode")
   .option("-p, --port", "Port")
-  .parse(process.argv);
+  .parse(process.argv)
+  .opts();
 
 const isBuild = !!cmdParams.build;
 const port = cmdParams.port || 8089;
 
-console.log("");
 console.log(chalk.black.bgGreen(" New blog generator 2.0 "));
 console.log(figlet.textSync("Cool Blog"));
 console.log("");
-console.log("Listening on port: " + chalk.cyanBright(port));
+if (isBuild) {
+  console.log("Build the static site");
+} else {
+  console.log("Listening on port: " + chalk.cyanBright(port));
+}
 
 const defMetadata = {
   readingTime: undefined,
@@ -96,3 +100,5 @@ metal.build(function (err) {
     throw err;
   }
 });
+
+console.log("..OK");
