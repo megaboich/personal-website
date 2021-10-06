@@ -5,7 +5,7 @@ body {
 }
 
 #main-home-photo-bg {
-  background-image: url("../../photo_bg.jpg");
+  background-image: url("../backgrounds/photo_bg.jpg");
   position: fixed;
   height: 810px;
   width: 800px;
@@ -13,11 +13,11 @@ body {
   right: -340px;
   top: 0;
   z-index: -1;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 #chords-img-bg {
-  background-image: url(../backgrounds/guitar.jpg);
+  background-image: url("../backgrounds/guitar.jpg");
   position: fixed;
   height: 1110px;
   width: 800px;
@@ -25,6 +25,7 @@ body {
   right: -340px;
   z-index: -1;
   transform: scale(0.7);
+  opacity: 0.5;
 }
 
 .section-content {
