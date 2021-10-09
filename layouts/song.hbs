@@ -6,11 +6,15 @@
 
 {{#* inline "block-content" }}
 <h1 class="title">{{title}}</h1>
+<div id="chords-img-bg"></div>
+
 {{> tags-combined }}
 {{> sound-cloud-inline }}
 
 {{#replace-underscores}}{{{contents}}}{{/replace-underscores}}
-<div id="chords-img-bg"></div>
+
+{{> used-chords-inline }}
+
 {{/inline}}
 
 {{/main-layout}}

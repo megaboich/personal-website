@@ -1,0 +1,13 @@
+<div>
+    {{#xif " usedChords " }}
+    <div class="chords-container">
+        {{#each usedChords}}
+            <div class="chord-container" data-chord-notation="{{ this }}">
+                <!--Chord SVG should be rendered here -->
+            </div>
+        {{/each}}
+    </div>
+    <script src="/assets/js/chords-renderer.js"></script>
+    <script>chordsRenderer.renderAll()</script>
+    {{/xif}}
+</div>
