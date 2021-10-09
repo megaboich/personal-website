@@ -9,3 +9,14 @@ code {
   margin-bottom: -6px;
   margin-top: -4px;
 }
+
+.chords-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.chord-container {
+  width: 100px;
+  height: 100px;
+}

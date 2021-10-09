@@ -35,6 +35,7 @@ const defMetadata = {
   tags: undefined,
   title: undefined,
   soundCloudId: undefined,
+  usedChords: undefined,
   description: "Oleksandr Boiko",
   tools: {
     currentYear: new Date().getFullYear()
