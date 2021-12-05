@@ -4,8 +4,8 @@ title: Спокойная ночь
 collection: chords
 tags:
   - Цой
-soundCloudId: 133164872
 ---
+<soundcloud-renderer data-soundcloudid="133164872"></soundcloud-renderer>
 
 `Am_____________________________G`
 

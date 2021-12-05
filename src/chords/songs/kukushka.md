@@ -4,8 +4,8 @@ title: Кукушка
 collection: chords
 tags:
   - Цой
-soundCloudId: 80095985
 ---
+<soundcloud-renderer data-soundcloudid="80095985"></soundcloud-renderer>
 
 `Am`
 

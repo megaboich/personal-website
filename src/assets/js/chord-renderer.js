@@ -148,19 +148,34 @@
     }
   }
 
-  function renderAll() {
-    const chordsContainer = document.querySelectorAll(".chord-container");
-    for (const chordContainer of [...chordsContainer]) {
-      const chordNotation = chordContainer.getAttribute("data-chord-notation");
+  class ChordRenderer extends HTMLElement {
+    constructor() {
+      super();
+      const shadow = this.attachShadow({ mode: "open" });
+      this.wrapper = document.createElement("div");
+      this.wrapper.setAttribute("class", "wrapper");
+      shadow.appendChild(this.wrapper);
+
+      const style = document.createElement("style");
+      style.textContent = `
+        :host {
+          display: inline-block;
+        }
+    `;
+
+      shadow.appendChild(style);
+    }
+
+    connectedCallback() {
+      this.renderContent();
+    }
+
+    renderContent() {
+      const chordNotation = this.getAttribute("data-chord");
       const [label, notation] = chordNotation.split(" ");
-      if (label && notation) {
-        renderChord(chordContainer, label, notation);
-      }
+      renderChord(this.wrapper, label, notation);
     }
   }
 
-  window.chordsRenderer = window.chordsRenderer || {
-    renderChord: renderChord,
-    renderAll: renderAll
-  };
+  customElements.define("chord-renderer", ChordRenderer);
 })();

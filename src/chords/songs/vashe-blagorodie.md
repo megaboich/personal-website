@@ -4,8 +4,8 @@ title: Ваше Благородие (к/ф "Белое солнце пусты�
 collection: chords
 tags:
   - Песни из фильмов
-soundCloudId: 147785002
 ---
+<soundcloud-renderer data-soundcloudid="147785002"></soundcloud-renderer>
 
 `Am`
 
