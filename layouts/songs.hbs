@@ -1,9 +1,9 @@
-{{#> main-layout }}
+{{#>main-layout}}
 
-{{#* inline "head-bottom-content" }}
+{{#*inline "head-bottom-content"}}
 {{/inline}}
 
-{{#* inline "block-content" }}
+{{#*inline "block-content"}}
 <h1 class="title">{{title}}</h1>
 
 {{{contents}}}
@@ -13,7 +13,7 @@
     {{#each collections.chords}}
     <li>
         <a href="/{{path}}">
-            {{ title }}
+            {{title}}
         </a>
     </li>
     {{/each}}

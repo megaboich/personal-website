@@ -1,13 +1,13 @@
 const commander = require("commander");
 const figlet = require("figlet");
 const chalk = require("chalk");
+const path = require("path");
 const Metalsmith = require("metalsmith");
 const markdown = require("metalsmith-markdown");
 const layouts = require("metalsmith-layouts");
 const collections = require("metalsmith-collections");
 const serve = require("metalsmith-serve");
 const watch = require("metalsmith-watch");
-const handlebarsMetalsmith = require("./handlebars-metalsmith");
 const handlebarsHelpers = require("./handlebars-helpers");
 
 const cmdParams = commander
@@ -36,11 +36,11 @@ const defMetadata = {
   title: undefined,
   soundCloudId: undefined,
   usedChords: undefined,
-  description: "Oleksandr Boiko",
-  tools: {
-    currentYear: new Date().getFullYear()
-  }
+  description: "Oleksandr Boiko"
 };
+
+handlebarsHelpers.registerHelpers();
+handlebarsHelpers.registerPartials(path.join(__dirname, "partials"));
 
 const metal = Metalsmith(__dirname);
 metal.metadata({ ...defMetadata });
@@ -50,17 +50,16 @@ metal.clean(true);
 
 metal.use(markdown());
 
-metal.use(
-  handlebarsMetalsmith({
-    pattern: "**/*.hbs"
-  })
-);
-
-handlebarsHelpers.registerHelpers();
-
 metal.use((files, metalsmith, done) => {
-  setImmediate(done);
-  metalsmith.metadata({ ...defMetadata });
+  for(const key of Object.keys(files)){
+    /**
+     * Save the content immediately after markdown transformation was performed.
+     * Useful when we want to operate with content of the article but before the layout was applied.
+     */
+    files[key].contents_first_pass = files[key].contents;
+  }
+
+  done();
 });
 
 metal.use(
@@ -82,9 +81,8 @@ if (!isBuild) {
   metal.use(
     watch({
       paths: {
-        "${source}/**/*": "**/*",
-        "layouts/**/*": "**/*",
-        "partials/**/*": "**/*"
+        "src/**/*": "**/*",
+        "layouts/**/*": "**/*"
       }
     })
   );

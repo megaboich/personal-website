@@ -1,9 +1,9 @@
-{{#> main-layout }}
+{{#>main-layout}}
 
-{{#* inline "head-bottom-content" }}
+{{#*inline "head-bottom-content"}}
 {{/inline}}
 
-{{#* inline "block-content" }}
+{{#*inline "block-content"}}
 <h1 class="title">{{title}}</h1>
 {{{contents}}}
 <!-- Links to all posts: -->
@@ -13,16 +13,16 @@
         <div class="media">
             <div class="media-content">
                 <a class="title is-4" href="/{{#remove-index-from-url}}{{path}}{{/remove-index-from-url}}">
-                    {{ title }}
+                    {{title}}
                 </a>
 
                 <br />
                 <br />
 
-                {{> tags-combined }}
+                {{>tags-combined}}
 
                 {{#cut-excerpt}}
-                {{{contents}}}
+                {{{contents_first_pass}}}
                 {{/cut-excerpt}}
                 <div>
                     <a class="has-text-primary" href="/{{#remove-index-from-url}}{{path}}{{/remove-index-from-url}}">
