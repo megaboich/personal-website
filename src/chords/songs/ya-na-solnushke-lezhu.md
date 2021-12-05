@@ -4,8 +4,8 @@ title: Песенка Льва и Черепахи
 collection: chords
 tags:
   - Детские песни
-soundCloudId: 191600736
 ---
+<soundcloud-renderer data-soundcloudid="191600736"></soundcloud-renderer>
 
 `_____ C _____ F _____ C`
 

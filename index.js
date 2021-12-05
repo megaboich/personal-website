@@ -34,8 +34,6 @@ const defMetadata = {
   date: undefined,
   tags: undefined,
   title: undefined,
-  soundCloudId: undefined,
-  usedChords: undefined,
   description: "Oleksandr Boiko"
 };
 
@@ -81,8 +79,7 @@ if (!isBuild) {
   metal.use(
     watch({
       paths: {
-        "src/**/*": "**/*",
-        "layouts/**/*": "**/*"
+        "src/**/*": "**/*"
       }
     })
   );

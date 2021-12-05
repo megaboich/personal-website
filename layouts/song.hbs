@@ -1,20 +1,19 @@
 {{#>main-layout}}
 
 {{#*inline "head-bottom-content"}}
-<link rel="stylesheet" type="text/css" href="/assets/css/song.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/song.css" />
+    <script type="text/javascript" src="/assets/js/chord-renderer.js"></script>
+    <script type="text/javascript" src="/assets/js/lib/alphatab/alphatab.min.js"></script>
+    <script type="text/javascript" src="/assets/js/alphatab-renderer.js"></script>
 {{/inline}}
 
 {{#*inline "block-content"}}
-<h1 class="title">{{title}}</h1>
-<div id="chords-img-bg"></div>
+    <h1 class="title">{{title}}</h1>
+    <div id="chords-img-bg"></div>
 
-{{>tags-combined}}
-{{>sound-cloud}}
+    {{>tags-combined}}
 
-{{#replace-underscores}}{{{contents}}}{{/replace-underscores}}
-
-{{>used-chords}}
-
+    {{#replace-underscores}}{{{contents}}}{{/replace-underscores}}    
 {{/inline}}
 
 {{/main-layout}}

@@ -4,8 +4,8 @@ title: Бриллиантовые дороги
 collection: chords
 tags:
   - Наутилус
-soundCloudId: 70434677
 ---
+<soundcloud-renderer data-soundcloudid="70434677"></soundcloud-renderer>
 
 `Em`
 

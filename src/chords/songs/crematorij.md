@@ -4,11 +4,8 @@ title: Крематорий
 collection: chords
 tags:
   - Крематорий
-soundCloudId: 234515308
-usedChords:
-  - D#dim 2-1-2-1-0-0
-  - C 0-1-0-2-X-X
 ---
+<soundcloud-renderer data-soundcloudid="234515308"></soundcloud-renderer>
     
 `Am`
 
@@ -52,3 +49,7 @@ usedChords:
 
  Крематорий
 
+---
+
+<chord-renderer data-chord="D#dim 2-1-2-1-0-0"></chord-renderer>
+<chord-renderer data-chord="C 0-1-0-2-X-X"></chord-renderer>

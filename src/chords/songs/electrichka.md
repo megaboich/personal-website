@@ -4,11 +4,9 @@ title: Электричка
 collection: chords
 tags:
   - Цой
-soundCloudId: 899109412
-usedChords:
-  - C 0-1-0-2-3-3
 ---
-    
+<soundcloud-renderer data-soundcloudid="899109412"></soundcloud-renderer>
+
 `Em_____________C______Em__________C________Em___C__Em__C`
 
 Я вчера слишком поздно лег, сегодня рано встал,
@@ -35,3 +33,6 @@ usedChords:
 
 Электричка везет меня туда, куда я не хочу.
 
+---
+
+<chord-renderer data-chord="C 0-1-0-2-3-3"></chord-renderer>

@@ -4,8 +4,8 @@ title: Город золотой
 collection: chords
 tags:
   - Аквариум
-soundCloudId: 159219241
 ---
+<soundcloud-renderer data-soundcloudid="159219241"></soundcloud-renderer>
 
 `___Am___E7___Am________E7___Am`
 Под небом голубым есть город золотой

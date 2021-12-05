@@ -4,8 +4,8 @@ title: Геена огненная
 collection: chords
 tags:
   - Крематорий
-soundCloudId: 106171644
 ---
+<soundcloud-renderer data-soundcloudid="106171644"></soundcloud-renderer>
 
 _Intro_
 

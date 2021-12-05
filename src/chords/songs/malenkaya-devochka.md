@@ -4,8 +4,8 @@ title: Маленькая девочка
 collection: chords
 tags:
   - Крематорий
-soundCloudId: 446649078
 ---
+<soundcloud-renderer data-soundcloudid="446649078"></soundcloud-renderer>
 
 `Am________D______F____________Am`
 

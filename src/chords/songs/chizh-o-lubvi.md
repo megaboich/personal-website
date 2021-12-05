@@ -4,8 +4,8 @@ title: О любви
 collection: chords
 tags:
   - Чиж
-soundCloudId: 171522328
 ---
+<soundcloud-renderer data-soundcloudid="171522328"></soundcloud-renderer>
 
 `D ____ F# ____ Bm ____ G`
 

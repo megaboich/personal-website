@@ -4,8 +4,8 @@ title: Голубой вагон
 collection: chords
 tags:
   - Детские песни
-soundCloudId: 210724693
 ---
+<soundcloud-renderer data-soundcloudid="210724693"></soundcloud-renderer>
 
 `Am__________________Dm`
 
