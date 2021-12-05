@@ -1,5 +1,5 @@
 <div class="field is-grouped is-grouped-multiline">
-    {{#xif " date || readingTime || tags " }}
+    {{#jseval_if "date || readingTime || tags"}}
     <div class="control">
         <div class="tags has-addons">
             {{#if date}}
@@ -20,12 +20,12 @@
         <div class="tags">
             {{#each tags}}
             <span class="tag">
-                {{ this }}
+                {{this}}
             </span>
             {{/each}}
         </div>
     </div>
 
     <br />
-    {{/xif}}
+    {{/jseval_if}}
 </div>

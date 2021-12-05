@@ -1,19 +1,19 @@
-{{#> main-layout }}
+{{#>main-layout}}
 
-{{#* inline "head-bottom-content" }}
+{{#*inline "head-bottom-content"}}
 <link rel="stylesheet" type="text/css" href="/assets/css/song.css" />
 {{/inline}}
 
-{{#* inline "block-content" }}
+{{#*inline "block-content"}}
 <h1 class="title">{{title}}</h1>
 <div id="chords-img-bg"></div>
 
-{{> tags-combined }}
-{{> sound-cloud-inline }}
+{{>tags-combined}}
+{{>sound-cloud}}
 
 {{#replace-underscores}}{{{contents}}}{{/replace-underscores}}
 
-{{> used-chords-inline }}
+{{>used-chords}}
 
 {{/inline}}
 

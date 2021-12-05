@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>{{ title }}</title>
-    <meta name="description" content="{{ description }}" />
+    <title>{{title}}</title>
+    <meta name="description" content="{{description}}" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="/assets/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
@@ -59,14 +59,16 @@
 
     <section class="section section-content">
         <div class="container" style="max-width:960px">
-            <div class="content">{{>block-content}}</div>
+            <div class="content">
+                {{>block-content}}
+            </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="content has-text-centered">
             <p>
-                <span>© Copyright {{ tools.currentYear }}, </span>
+                <span>© Copyright {{jseval 'new Date().getFullYear()'}}, </span>
                 <a href="/">Oleksandr Boiko</a>.
                 <span>The website content is licensed </span>
                 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
