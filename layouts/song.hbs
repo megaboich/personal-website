@@ -9,11 +9,14 @@
 
 {{#*inline "block-content"}}
     <h1 class="title">{{title}}</h1>
-    <div id="chords-img-bg"></div>
-
+    
     {{>tags-combined}}
 
-    {{#replace-underscores}}{{{contents}}}{{/replace-underscores}}    
+    {{#replace-underscores}}{{{contents}}}{{/replace-underscores}}
+
+    <div id="decoration-bg-right"></div>
+    <div id="decoration-bg-left"></div>
+
 {{/inline}}
 
 {{/main-layout}}
