@@ -3,25 +3,22 @@ layout: post.hbs
 title: Welcome
 ---
 
-My name is Oleksandr Boiko and this is my website.
+My name is Oleksandr Boiko, welcome to my website.
 
-My main occupation is software development, I do this professionally for my living since 2005 and so far I pretty like what I am doing.
+My main occupation is software development. I do this professionally for a living since 2005 and so far I pretty much like what I am doing.
 
-- [LinkedIn profile](https://www.linkedin.com/in/oleksandrboiko)
-- [Résumé](/resume/)
+A little bit about myself.
+I was born in [Kharkiv, Ukraine](https://en.wikipedia.org/wiki/Kharkiv), and lived there till 2015. Then I grasped an opportunity and moved to The Netherlands to pursue my professional and personal ambitions. Currently, I am enjoying my life in the suburbs of Amsterdam in a company with my wife, kids, and a quite smart cat.
 
-I lived in [Kharkiv, Ukraine](https://en.wikipedia.org/wiki/Kharkiv) till 2015 and then I moved to [Amsterdam area, The Netherlands](https://en.wikipedia.org/wiki/Randstad).
+I like playing the guitar from time to time and prefer to keep my favorite [lyrics, tabs, and chords](/chords) handy in one place.
 
-I have a beautiful wife, wonderful children, and a very smart tuxedo cat.
+Sometimes I have some free time and an urgent desire to code something different or unusual. I like to do experiments and learn new stuff. Occasionally it happens that a small experiment evolves into a [project or demo](/projects/). A long time ago I wrote some posts in a [dev blog](/posts) which now is mostly irrelevant.
 
-I enjoy playing the guitar from time to time and prefer to keep [lyrics and chords](/chords) handy in one place.
+[LinkedIn profile](https://www.linkedin.com/in/oleksandrboiko)
 
-Sometimes I have some free time and an urgent desire to code something different or unusual. I like to do experiments and learn new stuff. Occasionally it happens that small experiment evolves into a project.
+[Résumé](/resume/)
 
-- [Projects](/projects/)
-- [Github profile](https://github.com/megaboich)
-
-When I do have something to share I try to write an article in my [blog](/posts/).
+[Github profile](https://github.com/megaboich)
 
 E-mail: mega.boich@gmail.com
 
