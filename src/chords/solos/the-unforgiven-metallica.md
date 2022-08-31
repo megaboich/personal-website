@@ -11,6 +11,7 @@ tags:
 
 ## Chords
 
+<auto-scroller duration="3"></auto-scroller>
 #### Intro
 `Am`
 
@@ -21,78 +22,172 @@ tags:
 ---
 #### Verse 1
  
-`Am_________________Em_______D_____________Am`
+`Am                   Em`
 
-New blood joins this earth  and quickly he's sub-dued.
+New blood joins this earth
 
-`______________________Em________D__________________Am`
+`    D                Am`
 
-Through constant pain disgrace, the young boy learns their rules.
+And quickly heʼs sub-dued.
 
-`______________________Em_____D_______________Am`
+`        Am               Em`
 
-With time the child draws in this whipping boy done wrong.
+Through constant pain disgrace
 
-`________________Em___________D________________Am`
+`    D                      Am`
 
-Deprived of all his thoughts, the young man struggles on and  on.
-
-`_______________C__________G_________Am`
-
-He knows,  oo, a  vow unto  his own that never from this day
-
-`____C_____________G_____E`
-
-his will they'll take a - way.
+The young boy learns their rules.
  
- ---
-#### Chorus
+`     Am                   Em`
 
-`_Am______C____________G___________Em_____________________Am`
+With time the child draws in
 
-What I've felt, what I've known never shined through in what I've shown.
+`     D                 Am`
 
-`_Am____C________G__________E__________________Am`
+This whipping boy done wrong.
 
-Never be. Never see. Won't see what might have been.
+`  Am                Em`
 
-`_Am______C____________G___________Em_____________________Am`
+Deprived of all his thoughts
 
-What I've felt, what I've known,never shined through in what I've shown.
+`    D                   Am`
 
-`_Am_____C________G_______E_________Am`
-
-Never free. Never me. So I dub the unforgiven.
+The young man struggles on and on, heʼs known
  
- ---
-#### Verse 2
+`      C        G`
 
-`_Am______________Em____D__________Am`
+A vow unto his own
 
-They dedicate their lives to running all of his
+`    Am`
 
-`____________________Em______D________Am`
+That never from this day
 
-He tries to please them all, this bitter man he is
+`   C                  G Em`
 
-`____________________Em_________D____________Am`
+His will theyʼll take away
 
-Throughout the life the same, he's battled constantly
+---
+##### Chorus
 
-`__________________Em____D____________Am`
+`Am        C               G`
 
-This fight he cannot win. A tired man they see no longer cares.
+What Iʼve felt, what Iʼve known
 
-`______C_______G__________Am`
+`      Em                          Am`
 
-The old man then prepares to die regretfully
+Never shined through in what Iʼve shown.
 
-`______C________G____E`
+`      C         G`
+
+Never be. Never see.
+
+`      E                   Am`
+
+Wonʼt see what might have been.
+  
+`          C               G`
+
+What Iʼve felt, what Iʼve known
+
+`      Em                          Am`
+
+Never shined through in what Iʼve shown.
+
+`      C           G`
+
+Never free. Never me.
+
+`    E            Am`
+
+So I dub the unforgiven.
+
+---
+##### Verse 2
+
+`     Am             Em`
+They dedicate their lives
+
+`   D              Am`
+
+To running all of his
+
+`   Am                   Em`
+
+He tries to please them all
+
+`     D             Am`
+
+This bitter man he is
+ 
+`     Am                 Em`
+
+Throughout the life the same
+
+`     D               Am`
+
+Heʼs battled constantly
+
+`     Am              Em`
+
+This fight he cannot win.
+
+`  D              Am`
+
+A tired man they see no longer cares.
+ 
+`    C            G`
+
+The old man then prepares
+
+`   Am`
+
+To die regretfully
+
+`     C               G Em`
 
 That old man here is me.
+
+---
+##### Chorus
+
+`Am        C               G`
+
+What Iʼve felt, what Iʼve known
+
+`      Em                          Am`
+
+Never shined through in what Iʼve shown.
+
+`      C         G`
+
+Never be. Never see.
+
+`      E                   Am`
+
+Wonʼt see what might have been.
+  
+`          C               G`
+
+What Iʼve felt, what Iʼve known
+
+`      Em                          Am`
+
+Never shined through in what Iʼve shown.
+
+`      C           G`
+
+Never free. Never me.
+
+`    E            Am`
+
+So I dub the unforgiven.
+
+---
+
+<auto-scroller-end></auto-scroller-end>
  
 ## Fingerstyle adaptation
 
-<youtube-renderer data-youtubeid="&UnderBar;yp1ShKr80g"></youtube-renderer>
+<youtube-renderer data-youtubeid="_yp1ShKr80g"></youtube-renderer>
 
 <alphatab-renderer data-src="./the-unforgiven-metallica.gp4"></alphatab-renderer>
