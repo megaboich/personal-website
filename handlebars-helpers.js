@@ -25,9 +25,13 @@ module.exports = {
       return new Handlebars.SafeString(strContent.replace("index.html", ""));
     });
 
-    Handlebars.registerHelper("replace-underscores", function (options) {
+    Handlebars.registerHelper("fix-spaces-in-code-blocks", function (options) {
+      const regEx = /<code>(.*?)<\/code>/ig;
       const strContent = options.fn(this);
-      return new Handlebars.SafeString(strContent.replace(/_/g, "\xa0"));
+      const replaced = strContent.replace(regEx, (insideText) => {
+        return insideText.replace(/ /g, '\xa0').replace(/_/g, '\xa0');
+      });
+      return new Handlebars.SafeString(replaced);
     });
 
     Handlebars.registerHelper("format-date", function (options) {
