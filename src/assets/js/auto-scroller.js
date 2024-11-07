@@ -91,6 +91,22 @@
             playControls.appendChild(playBtn);
 
             this.appendChild(playControls);
+
+            // Hide auto-scrolling button when the song lyrics are out of view
+            document.addEventListener("scroll", () => {
+                const startPosition = playBtn.getBoundingClientRect().top + window.scrollY + 100;
+                
+                const endMarker = document.getElementsByTagName('auto-scroller-end').item(0);
+                const endPosition = endMarker
+                    ? (endMarker.getBoundingClientRect().top + window.scrollY + /* some extra white space after end marker */ 100)
+                    : document.body.scrollHeight;
+
+                if (startPosition >= endPosition) {
+                    playBtn.style.display = 'none';
+                } else {
+                    playBtn.style.display = 'block';
+                }
+            });
         }
     }
 

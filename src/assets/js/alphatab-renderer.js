@@ -77,7 +77,8 @@
         file: tabsUrl,
         player: {
           enablePlayer: true,
-          soundFont: '../../assets/js/lib/alphatab/soundfont/sonivox.sf2',
+          //soundFont: '../../assets/js/lib/alphatab/soundfont/sonivox.sf2',
+          soundFont: '../../assets/js/lib/alphatab/soundfont/microsoft_gm.sf2',
         }
       });
 
