@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node ./index.js",
     "build": "node ./index.js --build",
-    "deploy": "gh-pages -d build --repo https://github.com/megaboich/megaboich.github.io.git --branch master --user \"DeployBot <deploybot@example.com>\""
+    "deploy": "gh-pages -d build --repo https://github.com/megaboich/megaboich.github.io.git --branch master --user \"DeployBot <deploybot@example.com>\"",
+    "deploy:ga": "gh-pages -d build --repo https://$GH_TOKEN@github.com/megaboich/megaboich.github.io.git --branch master --user 'DeployBot <deploybot@example.com>'"
   },
   "author": "Oleksandr Boiko",
   "license": "ISC",
