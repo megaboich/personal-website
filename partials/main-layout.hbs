@@ -6,11 +6,18 @@
     <title>{{title}}</title>
     <meta name="description" content="{{description}}" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/lib/bulma/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
-    <script type="text/javascript" src="/assets/js/scripts.js"></script>
-    <script type="text/javascript" src="/assets/js/youtube-renderer.js"></script>
-    <script type="text/javascript" src="/assets/js/soundcloud-renderer.js"></script>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "@coderline/alphatab": "/assets/lib/alphatab/dist/alphaTab.min.mjs"
+            }
+        }
+    </script>
+
+    <script type="module" src="/assets/js/main.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70363755-1"></script>
@@ -52,8 +59,8 @@
                 <a class="navbar-item" href="/posts/">
                     Blog
                 </a>
-                <a class="navbar-item" href="/chords/">
-                    Chords
+                <a class="navbar-item" href="/songs/">
+                    Songs
                 </a>
             </div>
         </div>
