@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Yet another guitar tuner in web browser
-date: 2026-10-03
+date: 2026-08-15
 readingTime: 8
 collection: posts
 tags:

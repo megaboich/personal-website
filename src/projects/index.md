@@ -9,14 +9,14 @@ Sometimes I have some free time and urgent desire to code something different. I
 
 ### Yet another tuner
 
-<img class="project-card-img" src="/posts/2026-10-03-Yet-Another-Tuner/images/tuner-light-desktop.png">
+<img class="project-card-img" src="/posts/2026-08-15-Yet-Another-Tuner/images/tuner-light-desktop.png">
 </img>
 
 [Yet another tuner](https://github.com/megaboich/yet-another-tuner) is a guitar tuner which works directly in web browser. I was tired of tuner apps on my phone with ads, and also I wanted to explore Web Audio APIs on something real.
 
 Sound from the microphone is processed locally in an `AudioWorklet`, separately from the UI thread, and never leaves the device. Pitch detection is done by the McLeod Pitch Method implemented in plain JavaScript without any runtime dependencies.
 
-The first prototype was written by me in 2025, and in August 2026 the app was completed by AI ([GPT-5.6 Sol](https://openai.com/index/gpt-5-6/) in [OpenCode](https://opencode.ai)) under my guidance. More details about this story and implementation are in the [blog post](/posts/2026-10-03-Yet-Another-Tuner/).
+The first prototype was written by me in 2025, and in August 2026 the app was completed by AI ([GPT-5.6 Sol](https://openai.com/index/gpt-5-6/) in [OpenCode](https://opencode.ai)) under my guidance. More details about this story and implementation are in the [blog post](/posts/2026-08-15-Yet-Another-Tuner/).
 
 Features:
 
