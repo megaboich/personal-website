@@ -1,0 +1,14 @@
+{% extends "base.njk" %}
+
+{% block content %}
+<h1 class="title">{{ title }}</h1>
+{{ content | safe }}
+<ul>
+    {% for song in collections.songs %}
+    <li><a href="{{ song.url }}">{{ song.data.title }}</a></li>
+    {% endfor %}
+</ul>
+
+<div id="decoration-bg-right"></div>
+<div id="decoration-bg-left"></div>
+{% endblock %}

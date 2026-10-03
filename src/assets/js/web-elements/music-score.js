@@ -36,10 +36,10 @@ export class MusicScoreElement extends HTMLElement {
       .play-btn {
         margin-top: 36px;
       }
-      .play-btn.is-pause .fa-pause {
+      .play-btn.is-pause .ico-pause {
         display:none;
       }
-      .play-btn.is-play .fa-play {
+      .play-btn.is-play .ico-play {
         display:none;
       }
 
@@ -62,8 +62,8 @@ export class MusicScoreElement extends HTMLElement {
     playBtn.type = "button";
     playBtn.innerHTML = `
         <span class="icon is-small">
-          <i class="fas fa-play"></i>
-          <i class="fas fa-pause"></i>
+          <i class="ico ico-play"></i>
+          <i class="ico ico-pause"></i>
         </span>`;
     playBtn.className = "play-btn is-pause button is-primary is-rounded";
     playControls.appendChild(playBtn);
@@ -75,9 +75,11 @@ export class MusicScoreElement extends HTMLElement {
     const tabsUrl = this.getAttribute("data-src");
 
     const api = new alphaTab.AlphaTabApi(this.wrapper, {
-      file: tabsUrl,
+      core: {
+        file: tabsUrl
+      },
       player: {
-        enablePlayer: true,
+        playerMode: alphaTab.PlayerMode.EnabledSynthesizer,
         soundFont: "/assets/soundfont/microsoft_gm.sf2"
       }
     });
@@ -87,8 +89,7 @@ export class MusicScoreElement extends HTMLElement {
     });
 
     api.playerStateChanged.on(args => {
-      //0 - Paused, 1 - Playing
-      const isPause = args.state === 0;
+      const isPause = args.state === alphaTab.synth.PlayerState.Paused;
       playBtn.classList.toggle("is-pause", isPause);
       playBtn.classList.toggle("is-play", !isPause);
     });

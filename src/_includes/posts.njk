@@ -1,0 +1,29 @@
+{% extends "base.njk" %}
+{% from "macros.njk" import tagsCombined %}
+
+{% block content %}
+<h1 class="title">{{ title }}</h1>
+{{ content | safe }}
+{% for post in collections.posts %}
+<div class="card">
+    <div class="card-content">
+        <div class="media">
+            <div class="media-content">
+                <a class="title is-4" href="{{ post.url }}">{{ post.data.title }}</a>
+
+                <br />
+                <br />
+
+                {{ tagsCombined(post.data.date, post.data.readingTime, post.data.tags) }}
+
+                {{ post.content | excerpt | safe }}
+                <div>
+                    <a class="has-text-primary" href="{{ post.url }}">Read more -></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+{% endfor %}
+{% endblock %}

@@ -1,5 +1,5 @@
 ---
-layout: song.hbs
+layout: song
 title: Fields of Gold by Sting
 collection: songs
 tags:

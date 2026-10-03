@@ -1,18 +1,12 @@
 {
     "include": [
-        "src/",
-        "./build.js",
-        "./handlebars-helpers.js"
+        "src/"
+    ],
+    // Legacy jQuery demo from a 2013 post
+    "exclude": [
+        "src/posts/"
     ],
     "compilerOptions": {
-        "baseUrl": ".",
-        "paths": {
-            // Configuration for making visible types from locally stored packages
-            "@coderline/alphatab": [
-                "./src/assets/lib/alphatab/dist/alphaTab.d.ts"
-            ]
-        },
-        
         // Target latest version of ECMAScript.
         "target": "esnext",
         // Process & infer types from .js files.
@@ -25,8 +19,7 @@
         "strict": true,
         // enable the JSX and ignore transformations on it.
         "jsx": "preserve",
-        "moduleResolution": "node",
-        "module": "ESNext",
+        "module": "preserve",
         "skipLibCheck": true,
         /**
         * Allows to write an import like `import orderBy from 'lodash/orderBy'`

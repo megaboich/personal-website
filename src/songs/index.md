@@ -1,5 +1,5 @@
 ---
-layout: songs.hbs
+layout: songs
 title: Songs
 ---
 

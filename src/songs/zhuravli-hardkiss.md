@@ -1,5 +1,5 @@
 ---
-layout: song.hbs
+layout: song
 title: Журавлі by The HARDKISS
 collection: songs
 tags:

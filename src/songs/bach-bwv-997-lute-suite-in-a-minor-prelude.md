@@ -1,5 +1,5 @@
 ---
-layout: song.hbs
+layout: song
 title: "J. S. Bach's Lute Suite, BWV 997: I. Prelude"
 collection: songs
 tags:

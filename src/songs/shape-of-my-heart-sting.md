@@ -1,5 +1,5 @@
 ---
-layout: song.hbs
+layout: song
 title: Shape of my Heart by Sting
 collection: songs
 tags:

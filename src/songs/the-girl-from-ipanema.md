@@ -1,5 +1,5 @@
 ---
-layout: song.hbs
+layout: song
 title: The Girl from Ipanema by Antônio Carlos Jobim
 collection: songs
 tags:

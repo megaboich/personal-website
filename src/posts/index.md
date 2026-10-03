@@ -1,5 +1,5 @@
 ---
-layout: posts.hbs
+layout: posts
 title: Technical blog and experiments
 ---
 

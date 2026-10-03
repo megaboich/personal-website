@@ -1,5 +1,5 @@
 ---
-layout: song.hbs
+layout: song
 title: Fragile by Sting
 collection: songs
 tags:

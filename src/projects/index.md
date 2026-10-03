@@ -1,5 +1,5 @@
 ---
-layout: post.hbs
+layout: post
 title: Projects
 ---
 

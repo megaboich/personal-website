@@ -1,0 +1,14 @@
+{% extends "base.njk" %}
+{% from "macros.njk" import tagsCombined %}
+
+{% block head %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.12.0/styles/default.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.12.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+{% endblock %}
+
+{% block content %}
+<h1 class="title">{{ title }}</h1>
+{{ tagsCombined(date, readingTime, tags) }}
+{{ content | safe }}
+{% endblock %}

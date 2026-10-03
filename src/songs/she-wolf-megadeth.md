@@ -1,5 +1,5 @@
 ---
-layout: song.hbs
+layout: song
 title: She Wolf by Megadeth
 collection: songs
 tags:

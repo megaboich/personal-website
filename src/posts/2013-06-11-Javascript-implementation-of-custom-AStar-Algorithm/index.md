@@ -1,5 +1,5 @@
 ---
-layout: post.hbs
+layout: post
 title: Javascript implementation of custom A-Star algorithm
 date: 2013-06-11
 readingTime: 3
@@ -20,29 +20,27 @@ So, here are the rules:
 - Select cell, then press "Set Start" or "Set Finish" buttons to change start/destination point
 - Click on the "Go!" button to calculate a path.
 
-<div>
+<div class="box">
   <link rel="stylesheet" href="styles.css">
-  
-  <button id="gen-field-btn" class="btn btn-default">Generate New Field</button>
-  <br/>
-  <label for="field-width" class="input-group-addon">Width</label>
-  <input id="field-width" type="text" class="form-control" value="10"/>
-  <br/>
-  <label for="field-height" class="input-group-addon">Height</label>
-  <input id="field-height" type="text" class="form-control" value="10"/>
-  <br/>
-  
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <div id="field-container">
-      </div>
+  <div class="field is-grouped is-align-items-flex-end">
+    <div class="control">
+      <label for="field-width" class="label">Width</label>
+      <input id="field-width" type="number" min="1" class="input" style="width: 6em" value="10"/>
+    </div>
+    <div class="control">
+      <label for="field-height" class="label">Height</label>
+      <input id="field-height" type="number" min="1" class="input" style="width: 6em" value="10"/>
+    </div>
+    <div class="control">
+      <button id="gen-field-btn" class="button">Generate New Field</button>
     </div>
   </div>
-  
-  <button id="set-start-btn" class="btn btn-default">Set Start</button>
-  <button id="set-finish-btn" class="btn btn-default">Set Finish</button>
-  <button id="go-btn" class="btn btn-success">Go!</button>
-  
+  <div id="field-container"></div>
+  <div class="buttons mt-4">
+    <button id="set-start-btn" class="button">Set Start</button>
+    <button id="set-finish-btn" class="button">Set Finish</button>
+    <button id="go-btn" class="button is-success">Go!</button>
+  </div>
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="a-star-algorithm.js"></script>
   <script src="field-designer.js"></script>

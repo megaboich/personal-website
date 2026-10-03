@@ -2,28 +2,27 @@
   "name": "personal-website",
   "version": "1.0.0",
   "description": "",
-  "main": "build.js",
   "type": "module",
+  "packageManager": "pnpm@12.8.1",
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
-    "start": "node ./build.js --watch",
-    "build": "node ./build.js --build",
+    "start": "eleventy --serve --port=8089",
+    "build": "rm -rf build && eleventy",
+    "typecheck": "tsc",
     "deploy": "gh-pages -d build --repo https://github.com/megaboich/megaboich.github.io.git --branch master --user \"DeployBot <deploybot@example.com>\"",
     "deploy:ga": "gh-pages -d build --repo https://$GH_TOKEN@github.com/megaboich/megaboich.github.io.git --branch master --user 'DeployBot <deploybot@example.com>'"
   },
   "author": "Oleksandr Boiko",
   "license": "ISC",
-  "dependencies": {
-    "@metalsmith/collections": "^1.3.0",
-    "@metalsmith/layouts": "^2.7.0",
-    "@metalsmith/markdown": "^1.10.0",
-    "@types/browser-sync": "^2.29.0",
-    "@types/node": "^22.9.0",
-    "browser-sync": "^3.0.3",
-    "commander": "12.1.0",
-    "gh-pages": "6.2.0",
-    "handlebars": "4.7.8",
-    "jstransformer-handlebars": "1.2.0",
-    "metalsmith": "2.6.3",
-    "typescript": "^5.6.3"
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@coderline/alphatab": "^1.8.4",
+    "@types/node": "^24.19.1",
+    "bulma": "^1.0.4",
+    "gh-pages": "^6.3.0",
+    "markdown-it-anchor": "^10.0.0",
+    "typescript": "^7.0.2"
   }
 }

@@ -1,5 +1,5 @@
 ---
-layout: song.hbs
+layout: song
 title: Nothing Else Matters by Metallica
 collection: songs
 tags:

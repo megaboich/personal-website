@@ -1,0 +1,26 @@
+{% macro tagsCombined(date, readingTime, tags) %}
+<div class="field is-grouped is-grouped-multiline">
+    {% if date or readingTime or tags %}
+    <div class="control">
+        <div class="tags has-addons">
+            {% if date %}
+            <span class="tag is-warning is-light">{{ date | formatDate }}</span>
+            {% endif %}
+            {% if readingTime %}
+            <span class="tag">{{ readingTime }} min read</span>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="control">
+        <div class="tags">
+            {% for tag in tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+        </div>
+    </div>
+
+    <br />
+    {% endif %}
+</div>
+{% endmacro %}

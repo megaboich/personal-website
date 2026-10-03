@@ -1,5 +1,5 @@
 ---
-layout: song.hbs
+layout: song
 title: The Unforgiven by Metallica
 collection: songs
 tags:

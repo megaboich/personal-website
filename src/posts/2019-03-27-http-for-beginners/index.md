@@ -1,5 +1,5 @@
 ---
-layout: post.hbs
+layout: post
 title: HTTP for beginners
 date: 2019-03-27
 readingTime: 10
@@ -18,7 +18,7 @@ HTTP is a protocol which allows the fetching of resources, such as HTML document
 
 ![](images/Fetching_a_page.png)
 
-_Image is taken from the MDN website: https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview._
+_Image is taken from the MDN website: <https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview>._
 
 ## HTTP is a client-server protocol
 
@@ -26,7 +26,7 @@ Each individual request is sent to a server, which will handle it and provide an
 
 ![](images/Client-server-chain.png)
 
-_Image is taken from the MDN website: https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview._
+_Image is taken from the MDN website: <https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview>._
 
 - Client: the user-agent
 - The Web server
@@ -64,7 +64,7 @@ Content-Type: text/html
 
 ![](images/HTTP_Request.png)
 
-_Image is taken from the MDN website: https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview._
+_Image is taken from the MDN website: <https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview>._
 
 Methods: GET, POST, [OPTIONS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/OPTIONS), HEAD
 
@@ -86,7 +86,7 @@ Body is optional
 
 ![](images/HTTP_Response.png)
 
-_Image is taken from the MDN website: https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview._
+_Image is taken from the MDN website: <https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview>._
 
 Headers:
 

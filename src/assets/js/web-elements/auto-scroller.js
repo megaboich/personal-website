@@ -47,7 +47,7 @@ export class AutoScrollerElement extends HTMLElement {
     playBtn.type = "button";
     playBtn.innerHTML = `
                 <span class="icon is-small">
-                    <i class="fas fa-scroll"></i>
+                    <i class="ico ico-scroll"></i>
                 </span>
             `;
     playBtn.title = "Auto scroll";

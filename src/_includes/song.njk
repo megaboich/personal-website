@@ -1,0 +1,16 @@
+{% extends "base.njk" %}
+{% from "macros.njk" import tagsCombined %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/song.css" />
+<script type="module" src="/assets/js/song-main.js"></script>
+{% endblock %}
+
+{% block content %}
+<h1 class="title">{{ title }}</h1>
+{{ tagsCombined(date, readingTime, tags) }}
+{{ content | fixSpacesInCodeBlocks | safe }}
+
+<div id="decoration-bg-right"></div>
+<div id="decoration-bg-left"></div>
+{% endblock %}

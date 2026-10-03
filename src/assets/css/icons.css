@@ -1,0 +1,24 @@
+/*
+ * Icons drawn as CSS masks, so they take the current text color.
+ * Usage: <i class="ico ico-play"></i>
+ */
+.ico {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask: var(--ico) center / contain no-repeat;
+}
+
+.ico-play {
+  --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 7 3.5z'/%3E%3C/svg%3E");
+}
+
+.ico-pause {
+  --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='5' y='3' width='5' height='18' rx='1'/%3E%3Crect x='14' y='3' width='5' height='18' rx='1'/%3E%3C/svg%3E");
+}
+
+.ico-scroll {
+  --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 3h12a2 2 0 0 1 0 4H6a2 2 0 0 1 0-4zM6 17h12a2 2 0 0 1 0 4H6a2 2 0 0 1 0-4zM7 7v10M17 7v10M10 10.5h4M10 13.5h4'/%3E%3C/svg%3E");
+}
