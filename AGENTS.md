@@ -72,7 +72,7 @@ Don't run `pnpm build` while `pnpm start` is running. Both write to `build/`, an
   - `icons.css`: CSS-mask icons that follow the text color: `<i class="ico ico-play"></i>`, plus `ico-pause` and `ico-scroll`. To add an icon, add a `.ico-name` rule with an SVG data-URI in `--ico`. Don't bring back Font Awesome.
 - **JavaScript:** plain ES modules in `src/assets/js/` with no bundler.
   - `main.js` (every page): Bulma navbar burger, `<awesome-youtube>`, `<awesome-soundcloud>`.
-  - `song-main.js` (song pages): `<awesome-chord>`, `<awesome-music-score>`, `<awesome-auto-scroller>`.
+  - `song-main.js` (song pages): `<awesome-chord>`, `<awesome-music-score>`, `<awesome-lyrics>`.
   - **alphaTab 1.8.4** comes from pnpm and is copied to `/assets/lib/alphatab/`. It's imported as `@coderline/alphatab` through the import map in `base.njk`, and uses the soundfont `/assets/soundfont/microsoft_gm.sf2`.
   - Type-checked with JSDoc and `tsc` (`checkJs`, strict).
 - **Files copied as-is into the build:** `src/CNAME`, `src/favicon.svg`, `src/assets/**`, `src/songs/*.{gp3,gp4}`, `src/posts/**/*.{png,jpg,gif,js,css}`. **Other file types in post folders (`.jpeg`, `.svg`, `.webp`, `.mp3`, …) are not copied.** Add the extension in `eleventy.config.js`, or convert the file.
@@ -154,8 +154,8 @@ Demo is deployed here: [https://olekboiko.com/repo/](https://olekboiko.com/repo/
    - `<awesome-youtube data-youtubeid="VIDEO_ID"></awesome-youtube>`, optionally with `data-start="150"` (seconds). There's also `<awesome-soundcloud data-soundcloudid="ID"></awesome-soundcloud>`.
    - A short personal note, in the author's voice, if he provided one.
    - Chord diagrams: `<awesome-chord data-chord="Asus2 0-0-2-2-0-0"></awesome-chord>`. The name is followed by six fret numbers from the high e string (1st) to the low E string (6th), so `G6 0-0-0-0-2-3` is 3-2-0-0-0-0 from low to high. `0` means open and `x` means muted.
-   - `<awesome-auto-scroller duration="3"></awesome-auto-scroller>` before the lyrics. `duration` is in minutes (default 3), and the optional `fps` defaults to `0.1`. It scrolls down to `<awesome-auto-scroller-end></awesome-auto-scroller-end>` (or the end of the page), which goes after the lyrics.
-   - Lyrics under `## Lyrics` (or `###`/`#####` section headings like `##### Verse 1`). Separate lines with blank lines, and verses with `---` (with a blank line before it).
+   - Lyrics and chord lines go inside `<awesome-lyrics duration="3">` … `</awesome-lyrics>`, including the `## Lyrics` heading. Leave a blank line after the opening tag and before the closing tag, otherwise markdown-it shows the content as raw text. `duration` is the song length in minutes. When it's set, a sticky auto-scroll button appears that scrolls from the top to the bottom of the element. Without `duration` there's no button. The optional `fps` defaults to `0.1`. The tight paragraph spacing and block-style chord lines only apply inside this element, so song notes outside it look like normal text.
+   - Inside the lyrics, use `###`/`#####` section headings like `##### Verse 1`. Separate lines with blank lines, and verses with `---` (with a blank line before it).
    - Chord lines go above the lyric line as inline code, using `_` (or spaces) to line chords up with the words: `` `Asus2______________G6` ``. The `fixSpacesInCodeBlocks` filter keeps the spacing.
    - Tabs go in a plain fenced code block (`e|---…`).
    - Playable sheet music: put the Guitar Pro file next to the Markdown (`src/songs/<name>.gp3` or `.gp4`) and add `<awesome-music-score data-src="./<name>.gp3"></awesome-music-score>`.

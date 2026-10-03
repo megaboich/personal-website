@@ -8,9 +8,9 @@ tags:
 
 <awesome-youtube data-youtubeid="KLVq0IAzh1A"></awesome-youtube>
 
-## Lyrics
+<awesome-lyrics duration="2.6">
 
-<awesome-auto-scroller duration="2.6"></awesome-auto-scroller>
+## Lyrics
 
 You'll remember me
 
@@ -110,7 +110,7 @@ When we walked in fields of gold
 
 When we walked in fields of gold
 
-<awesome-auto-scroller-end></awesome-auto-scroller-end>
+</awesome-lyrics>
 
 ## YouTube tutorial
 

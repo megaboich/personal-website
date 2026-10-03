@@ -1,13 +1,55 @@
-p {
+awesome-lyrics {
+  display: block;
+}
+
+awesome-lyrics p {
   margin: 0 !important;
 }
 
-code {
+awesome-lyrics code {
   display: block;
   padding: 0;
   background-color: inherit;
   margin-bottom: -6px;
   margin-top: -4px;
+}
+
+.lyrics-autoscroller {
+  position: sticky;
+  top: 30px;
+  height: 0;
+  z-index: 100;
+}
+
+.lyrics-autoscroller .button {
+  position: absolute;
+  right: 12px;
+  flex-direction: column;
+  height: 2.5em;
+}
+
+.lyrics-autoscroller .button .icon.is-small {
+  margin-inline: calc(var(--bulma-button-padding-horizontal) * -0.5);
+}
+
+.lyrics-autoscroller-countdown {
+  display: none;
+  font-size: 0.65em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.lyrics-autoscroller .button.is-running {
+  padding-block: 0;
+}
+
+.lyrics-autoscroller .button.is-running .icon.is-small {
+  height: 1.2em;
+  margin-inline: 0;
+}
+
+.lyrics-autoscroller .button.is-running .lyrics-autoscroller-countdown {
+  display: block;
 }
 
 .chords-container {

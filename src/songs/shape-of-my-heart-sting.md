@@ -12,7 +12,7 @@ Dominic Miller is so nice, big thanks to him for providing tabs and also his ama
 
 <awesome-youtube data-youtubeid="OXFNqf8hLj0"></awesome-youtube>
 
-<awesome-auto-scroller duration="3"></awesome-auto-scroller>
+<awesome-lyrics duration="3">
 
 ### Lyrics
 
@@ -104,7 +104,7 @@ That's not the shape
 
 The shape of my heart
 
-<awesome-auto-scroller-end></awesome-auto-scroller-end>
+</awesome-lyrics>
 
 ### Notes and tabs
 

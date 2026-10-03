@@ -12,9 +12,10 @@ tags:
 <awesome-chord data-chord="Asus2 0-0-2-2-0-0"></awesome-chord>
 <awesome-chord data-chord="G6 0-0-0-0-2-3"></awesome-chord>
 
-<awesome-auto-scroller duration="2.6"></awesome-auto-scroller>
-
 ---
+
+<awesome-lyrics duration="2.6">
+
 ##### Intro
 
 `Asus2`
@@ -108,4 +109,4 @@ tags:
 
 У синіх моїх очах
 
-<awesome-auto-scroller-end></awesome-auto-scroller-end>
+</awesome-lyrics>

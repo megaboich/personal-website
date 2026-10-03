@@ -80,7 +80,10 @@ export class MusicScoreElement extends HTMLElement {
       },
       player: {
         playerMode: alphaTab.PlayerMode.EnabledSynthesizer,
-        soundFont: "/assets/soundfont/microsoft_gm.sf2"
+        soundFont: "/assets/soundfont/microsoft_gm.sf2",
+        // alphaTab scrolls the page to the cursor after every render, so scrolling
+        // is enabled only when playback starts
+        scrollMode: alphaTab.ScrollMode.Off
       }
     });
 
@@ -92,6 +95,11 @@ export class MusicScoreElement extends HTMLElement {
       const isPause = args.state === alphaTab.synth.PlayerState.Paused;
       playBtn.classList.toggle("is-pause", isPause);
       playBtn.classList.toggle("is-play", !isPause);
+
+      if (!isPause && api.settings.player.scrollMode === alphaTab.ScrollMode.Off) {
+        api.settings.player.scrollMode = alphaTab.ScrollMode.Continuous;
+        api.updateSettings();
+      }
     });
   }
 }

@@ -8,6 +8,8 @@ tags:
 
 <awesome-youtube data-youtubeid="sVdaFQhS86E"></awesome-youtube>
 
+<awesome-lyrics duration="3">
+
 ## Lyrics
 
 Tall and tan and young and lovely
@@ -49,6 +51,8 @@ The girl from Ipanema goes walking
 And when she passes
 
 I smile but she doesn't see, doesn't see
+
+</awesome-lyrics>
 
 ## YouTube tutorial
 

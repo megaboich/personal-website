@@ -8,6 +8,8 @@ tags:
 
 <awesome-youtube data-youtubeid="lB6a-iD6ZOY"></awesome-youtube>
 
+<awesome-lyrics duration="3">
+
 ## Lyrics
 
 If blood will flow when flesh and steel are one
@@ -39,6 +41,8 @@ Like tears from a star like tears from a star
 On and on the rain will say
 
 How fragile we are how fragile we are
+
+</awesome-lyrics>
 
 ---
 

@@ -6,7 +6,7 @@ tags:
   - Metallica
 ---
 
-<awesome-auto-scroller duration="3"></awesome-auto-scroller>
+<awesome-lyrics duration="3">
 
 ## Lyrics
 
@@ -108,7 +108,7 @@ No, nothing else matters
 
 ---
 
-<awesome-auto-scroller-end></awesome-auto-scroller-end>
+</awesome-lyrics>
 
 
 <awesome-music-score data-src="./nothing-else-matters-metallica.gp3"></awesome-music-score>

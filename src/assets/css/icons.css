@@ -19,6 +19,7 @@
   --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='5' y='3' width='5' height='18' rx='1'/%3E%3Crect x='14' y='3' width='5' height='18' rx='1'/%3E%3C/svg%3E");
 }
 
+/* "scroll-text" icon from Lucide, https://lucide.dev, ISC License */
 .ico-scroll {
-  --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 3h12a2 2 0 0 1 0 4H6a2 2 0 0 1 0-4zM6 17h12a2 2 0 0 1 0 4H6a2 2 0 0 1 0-4zM7 7v10M17 7v10M10 10.5h4M10 13.5h4'/%3E%3C/svg%3E");
+  --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 12h-5M15 8h-5M19 17V5a2 2 0 0 0-2-2H4M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3'/%3E%3C/svg%3E");
 }

@@ -9,9 +9,10 @@ tags:
 <awesome-youtube data-youtubeid="Ckom3gf57Yw"></awesome-youtube>
 
 
+<awesome-lyrics duration="3">
+
 ## Chords
 
-<awesome-auto-scroller duration="3"></awesome-auto-scroller>
 #### Intro
 `Am`
 
@@ -184,7 +185,7 @@ So I dub the unforgiven.
 
 ---
 
-<awesome-auto-scroller-end></awesome-auto-scroller-end>
+</awesome-lyrics>
  
 ## Fingerstyle adaptation
 
