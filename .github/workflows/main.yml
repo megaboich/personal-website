@@ -27,7 +27,15 @@ jobs:
 
     - run: pnpm run build
 
-    - run: pnpm run deploy:ga
+    # Pushes to megaboich.github.io with an SSH deploy key (write access to that repo only)
+    - name: Deploy
       if: github.event_name == 'push'
       env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+      run: |
+        mkdir -p ~/.ssh
+        curl -fsSL https://api.github.com/meta | jq -r '.ssh_keys[] | "github.com " + .' > ~/.ssh/known_hosts
+        install -m 600 /dev/null ~/.ssh/deploy_key
+        printf '%s\n' "$DEPLOY_KEY" > ~/.ssh/deploy_key
+        export GIT_SSH_COMMAND="ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes"
+        pnpm run deploy:ga
